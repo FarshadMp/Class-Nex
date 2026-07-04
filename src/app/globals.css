@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: #059669;
+  --color-primary-hover: #047857;
+  --color-secondary: #16a34a;
+  --color-secondary-hover: #15803d;
+  --font-sans: var(--font-darker-grotesque);
+  --font-arabic: var(--font-noto-kufi);
+  --font-inter: var(--font-inter), sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+body, button, input, select, textarea, a, span, h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-darker-grotesque), "Darker Grotesque", Arial, sans-serif;
+}
+
+.bg-grid-pattern {
+  background-color: #fcfbf9;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+  background-size: 15px 15px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Color overrides for hardcoded blue values */
+.bg-\[\#008cd6\],
+.hover\:bg-\[\#008cd6\]:hover {
+  background-color: #059669 !important; /* Emerald 600 */
+}
+.text-\[\#008cd6\],
+.hover\:text-\[\#008cd6\]:hover,
+.group-hover\:text-\[\#008cd6\]:hover {
+  color: #059669 !important;
+}
+.border-\[\#008cd6\],
+.border-\[\#008cd6\]\/20 {
+  border-color: #059669 !important;
+}
+.ring-\[\#008cd6\]\/20 {
+  --tw-ring-color: rgba(5, 150, 105, 0.2) !important;
+}
+.hover\:bg-\[\#007cc0\]:hover {
+  background-color: #047857 !important; /* Emerald 700 */
+}
+.focus\:ring-\[\#008cd6\]\/25:focus {
+  --tw-ring-color: rgba(5, 150, 105, 0.25) !important;
+}
+.text-\[\#008fd3\] {
+  color: #059669 !important;
+}
+.bg-\[\#008cd6\]\/10 {
+  background-color: rgba(5, 150, 105, 0.1) !important;
+}
+.bg-\[\#008cd6\]\/5 {
+  background-color: rgba(5, 150, 105, 0.05) !important;
+}
+
+/* Secondary Color overrides */
+.bg-\[\#ffc023\] {
+  background-color: #16a34a !important; /* Green 600 */
+}
+
+/* Gradient Banner overrides (old blue to new emerald/green) */
+.from-\[\#0c70bf\] {
+  --tw-gradient-from: #16a34a !important; /* Green 600 */
+  --tw-gradient-to: rgba(22, 163, 74, 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+.via-\[\#0f80dc\] {
+  --tw-gradient-to: rgba(5, 150, 105, 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #059669, var(--tw-gradient-to) !important;
+}
+.to-\[\#2094ed\] {
+  --tw-gradient-to: #047857 !important; /* Emerald 700 */
+}
+
+/* InnerHero Text Gradient overrides */
+.from-\[\#008cd6\] {
+  --tw-gradient-from: #16a34a !important;
+  --tw-gradient-to: rgba(22, 163, 74, 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+.to-\[\#0c70bf\] {
+  --tw-gradient-to: #047857 !important;
+}
+
+/* Light Accent highlights overrides */
+.text-\[\#00d2ff\] {
+  color: #34d399 !important; /* Emerald 400 */
+}
+.bg-\[\#00d2ff\] {
+  background-color: #34d399 !important;
+}
+.bg-\[\#00d2ff\]\/5 {
+  background-color: rgba(52, 211, 153, 0.05) !important;
+}
+.bg-\[\#00d2ff\]\/10 {
+  background-color: rgba(52, 211, 153, 0.1) !important;
+}
+
+/* Dark themed background gradient overrides */
+.from-\[\#00385c\] {
+  --tw-gradient-from: #022c22 !important; /* Emerald 950 */
+  --tw-gradient-to: rgba(2, 44, 34, 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+.via-\[\#004c7c\] {
+  --tw-gradient-to: rgba(6, 78, 59, 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #064e3b, var(--tw-gradient-to) !important;
+}
+.to-\[\#0066a6\] {
+  --tw-gradient-to: #0f766e !important; /* Teal 700 */
+}
