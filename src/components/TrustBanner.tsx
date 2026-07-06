@@ -33,7 +33,7 @@ export default function TrustBanner() {
                 TRUSTED BY SCHOOLS
               </span>
               
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[45px] font-extrabold tracking-tight leading-[1.1] max-w-xl">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[45px] font-bold tracking-tight leading-[1.1] max-w-xl">
                 1,200+ Schools & Counting. Every Educational Need.
               </h2>
               
@@ -52,7 +52,7 @@ export default function TrustBanner() {
             
             {/* Right Side: Paragraph description aligned at bottom right */}
             <div className="lg:col-span-5 lg:pl-6">
-              <p className="text-sm sm:text-base text-emerald-50/90 font-semibold leading-relaxed">
+              <p className="text-sm sm:text-lg text-emerald-50/90 font-semibold leading-[1.6]">
                 Class Nex replaces fragmented point solutions with a single, intelligent platform covering the full spectrum of academic, administration, finance, and communication operations – purpose-built for modern schools in the GCC.
               </p>
             </div>

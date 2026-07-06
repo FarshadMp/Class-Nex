@@ -10,21 +10,21 @@ const testimonials = [
     name: "Dr. Mariam Al-Hadi",
     role: "Principal",
     school: "Al-Yasmin International School, Riyadh",
-    image: "/img/clients/client_mariam.png"
+    image: "https://images.unsplash.com/photo-1589156280159-27698a70f29e?q=80&w=400&auto=format&fit=crop"
   },
   {
     quote: "Managing data security and role access was our biggest challenge with 10,000+ students. ClassNex resolved this in weeks with top-tier role governance, automated backups, and AES-256 data encryption.",
     name: "Khalid Al-Mansoori",
     role: "IT Director",
     school: "UAE Academic Group, Dubai",
-    image: "/img/clients/client_khalid.png"
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop"
   },
   {
     quote: "The Modules Explorer allowed us to configure exam score averages and gradebooks specifically for our curriculum without buying custom-built databases. The interface is intuitive for teachers.",
     name: "Sarah Jenkins",
     role: "Academic Director",
     school: "International Academics, Qatar",
-    image: "/img/clients/client_sarah.png"
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop"
   }
 ];
 
@@ -52,7 +52,7 @@ export default function TestimonialsCarousel() {
           <div className="lg:col-span-3 flex flex-col gap-6">
             {/* Title Card */}
             <div className="bg-[#f0ede6]/40 border border-slate-200/50 rounded-[16px] md:rounded-[32px] p-4 md:p-8 flex flex-col justify-center min-h-auto py-6 sm:py-8 shadow-xs">
-              <h4 className="text-2xl font-black text-slate-800 tracking-tight leading-[1] mb-2">
+              <h4 className="text-2xl font-bold text-slate-800 tracking-tight leading-[1] mb-2">
                 Trusted by leaders
               </h4>
               <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">
@@ -108,7 +108,7 @@ export default function TestimonialsCarousel() {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <h5 className="text-base font-black text-slate-800">{current.name}</h5>
+                    <h5 className="text-base font-bold text-slate-800">{current.name}</h5>
                     <p className="text-xs font-bold text-slate-400 mt-1 uppercase tracking-wider">
                       {current.role} &bull; <span className="text-primary">{current.school}</span>
                     </p>

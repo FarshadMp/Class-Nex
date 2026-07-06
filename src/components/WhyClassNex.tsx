@@ -27,7 +27,7 @@ export default function WhyClassNex() {
             <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-3 md:mb-4 inline-block">
               Why Class Nex
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1] mb-4 md:mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-4 md:mb-6">
               The Future of Smart School Management
             </h2>
             <div className="space-y-4 md:space-y-6 text-base sm:text-lg text-slate-500 font-semibold leading-relaxed mb-6 md:mb-8">
@@ -45,7 +45,7 @@ export default function WhyClassNex() {
                 <BadgeDollarSign className="w-5 h-5 md:w-6 md:h-6" />
               </div>
               <div>
-                <h4 className="text-base sm:text-lg font-black text-slate-800 mb-1">Cost-Effective Solution</h4>
+                <h4 className="text-base sm:text-lg font-bold text-slate-800 mb-1">Cost-Effective Solution</h4>
                 <p className="text-xs sm:text-sm text-slate-500 font-bold uppercase tracking-wide">
                   Enterprise-grade capability, priced for schools of every size.
                 </p>

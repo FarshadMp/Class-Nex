@@ -77,7 +77,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
-          className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-slate-900 leading-[1.05] max-w-4xl mb-6 tracking-tight"
+          className="text-4xl sm:text-5xl lg:text-7xl font-bold text-slate-900 leading-[1.05] max-w-4xl mb-6 tracking-tight"
         >
           Run Your School on{" "}
           <span className="bg-gradient-to-r from-primary via-emerald-500 to-emerald-700 bg-clip-text text-transparent">

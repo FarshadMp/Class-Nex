@@ -10,7 +10,7 @@ export default function PlatformPlatform() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[45px] font-extrabold text-slate-900 tracking-tight leading-[1]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[45px] font-bold text-slate-900 tracking-tight leading-[1]">
             Powered by the ClassNex Platform
           </h2>
         </div>
@@ -21,8 +21,8 @@ export default function PlatformPlatform() {
           {/* Card 1: AI Chat Assistant */}
           <div className="relative bg-white border border-slate-200/50 rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:border-primary/20 transition-all duration-300 group min-h-[540px]">
             <div className="space-y-4">
-              <span className="text-[10px] font-black uppercase tracking-wider text-slate-400 block">AI Co-Pilot</span>
-              <h3 className="text-2xl font-black text-slate-800 leading-[1]">
+              <span className="text-sm font-bold uppercase tracking-wider text-slate-400 block">AI Co-Pilot</span>
+              <h3 className="text-2xl font-bold text-slate-800 leading-[1]">
                 Ask. Analyze.<br />Act.
               </h3>
               
@@ -46,7 +46,7 @@ export default function PlatformPlatform() {
               </div>
             </div>
 
-            <div className="mt-6 text-sm font-semibold text-slate-500 leading-relaxed">
+            <div className="mt-6 text-base font-semibold text-slate-500 leading-[1.4]">
               Interact with your entire school database using natural language. Query attendance, draft report card feedback, and dispatch warnings instantly.
             </div>
           </div>
@@ -54,8 +54,8 @@ export default function PlatformPlatform() {
           {/* Card 2: Unified Modules */}
           <div className="relative bg-slate-100/80 border border-slate-200/40 rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:border-primary/20 transition-all duration-300 group min-h-[540px]">
             <div className="space-y-4">
-              <span className="text-[10px] font-black uppercase tracking-wider text-slate-500 block">Unified Infrastructure</span>
-              <h3 className="text-2xl font-black text-slate-800 leading-[1]">
+              <span className="text-sm font-bold uppercase tracking-wider text-slate-500 block">Unified Infrastructure</span>
+              <h3 className="text-2xl font-bold text-slate-800 leading-[1]">
                 Connect Your School<br />Workflows.
               </h3>
               
@@ -71,7 +71,7 @@ export default function PlatformPlatform() {
               </div>
             </div>
 
-            <div className="mt-6 text-sm font-semibold text-slate-500 leading-relaxed">
+            <div className="mt-6 text-base font-semibold text-slate-500 leading-[1.4]">
               Consolidate academic, administrative, and financial processes with zero-setup components. Scalable architecture built to handle multi-hub school campuses.
             </div>
           </div>
@@ -79,8 +79,8 @@ export default function PlatformPlatform() {
           {/* Card 3: Integrations */}
           <div className="relative bg-emerald-50/70 border border-emerald-100/40 rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:border-primary/20 transition-all duration-300 group min-h-[540px]">
             <div className="space-y-4">
-              <span className="text-[10px] font-black uppercase tracking-wider text-emerald-600 block">Integrations</span>
-              <h3 className="text-2xl font-black text-slate-800 leading-[1]">
+              <span className="text-sm font-bold uppercase tracking-wider text-emerald-600 block">Integrations</span>
+              <h3 className="text-2xl font-bold text-slate-800 leading-[1]">
                 Connect to Local &amp;<br />Global APIs.
               </h3>
               
@@ -115,7 +115,7 @@ export default function PlatformPlatform() {
               </div>
             </div>
 
-            <div className="mt-6 text-sm font-semibold text-slate-500 leading-relaxed">
+            <div className="mt-6 text-base font-semibold text-slate-500 leading-[1.4]">
               Extend platform capabilities with secure communication nodes. Seamlessly connect with regional payment hubs, WhatsApp notifications, and local education APIs.
             </div>
           </div>
@@ -123,8 +123,8 @@ export default function PlatformPlatform() {
           {/* Card 4: Enterprise Control / Security */}
           <div className="relative bg-primary border border-primary/20 rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 group min-h-[540px] text-white">
             <div className="space-y-4">
-              <span className="text-[10px] font-black uppercase tracking-wider text-emerald-200 block">Security &amp; Privacy</span>
-              <h3 className="text-2xl font-black text-white leading-[1]">
+              <span className="text-sm font-bold uppercase tracking-wider text-emerald-200 block">Security &amp; Privacy</span>
+              <h3 className="text-2xl font-bold text-white leading-[1]">
                 Secure Your Records<br />As You Scale.
               </h3>
               
@@ -139,7 +139,7 @@ export default function PlatformPlatform() {
               </div>
             </div>
 
-            <div className="mt-6 text-sm font-semibold text-emerald-100/90 leading-relaxed">
+            <div className="mt-6 text-base font-semibold text-emerald-100/90 leading-[1.4]">
               Data sovereignty and defense at every layer. Features SSO/SAML integrations, role-based controls, comprehensive data masking, and automated secure backups.
             </div>
           </div>

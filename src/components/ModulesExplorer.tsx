@@ -16,57 +16,67 @@ const categories = [
     id: "admin",
     name: "Admissions & Admin",
     icon: Building2,
+    stat: "100%",
+    statLabel: "Paperless Registry",
+    quote: "Centralize your school database. Eliminate physical paperwork pipelines, digitize visitor logs, and configure security roles instantly.",
     modules: [
-      { name: "Enquiry Management", details: ["Structured pipeline tracker", "Automated follow-up logs", "Lead capture & task routing"] },
-      { name: "Admission Desk", details: ["Inquiry handling (walk-in/call)", "Digital document collection", "Receipting & parent meetings"] },
-      { name: "Student Management", details: ["Detailed student profiles", "Behavior logs & achievements", "Automated promotions"] },
-      { name: "Access & Security", details: ["Role-based customizable access", "Smart Card/biometric ready", "Multiple login panels"] },
-      { name: "Visitors Management", details: ["Visitor passes on apps", "Gate verification & timestamping", "Security push alerts"] }
+      { name: "Enquiry Management", details: ["Structured pipeline tracker", "Lead capture logs", "Task routing"] },
+      { name: "Admission Desk", details: ["Walk-in inquiry logs", "Digital document checklist", "Parent meetings logs"] },
+      { name: "Student Database", details: ["Profiles registry", "Achievements logs", "Automated Promotions"] },
+      { name: "Security & Gates", details: ["Role-based access", "Smart cards ready", "Visitor pass logs"] }
     ]
   },
   {
     id: "academics",
     name: "Academics & Class",
     icon: GraduationCap,
+    stat: "Real-Time",
+    statLabel: "Parent & Teacher Sync",
+    quote: "Engage parents and teachers instantly with automated class timetables, digital homework assignments, and biometric check-ins.",
     modules: [
-      { name: "Class & Timetable", details: ["Editable timetable builder", "Real-time timetable alerts", "Subject & teacher assignments"] },
-      { name: "Attendance Management", details: ["Biometric & RFID integration", "Manual marking via Teacher App", "Absence alerts to parents"] },
-      { name: "Homework & Tasks", details: ["Digital homework publishing", "File attachments (video/doc)", "Submission & feedback grading"] },
-      { name: "Daily Reports & Diary", details: ["Diary-style digital reporting", "Behavior & grade notes", "Parent app syncing"] },
-      { name: "Leave & Gate Pass", details: ["Parent-submitted leaves", "Workflow approval for staff", "Automatic gate pass print"] }
+      { name: "Class Timetables", details: ["Editable timetable builder", "Teacher allocations", "Real-time swap alerts"] },
+      { name: "RFID Attendance", details: ["RFID gate sensor ready", "Manual override log", "Absence SMS alerts"] },
+      { name: "Assignments Desk", details: ["Publish tasks with files", "Submission portals", "Teacher grades log"] },
+      { name: "Digital Diary", details: ["Daily diary reporting", "Behavior indicators", "Instant app sync"] }
     ]
   },
   {
     id: "exams",
     name: "Exams & Reports",
     icon: Award,
+    stat: "20x Faster",
+    statLabel: "Gradebooks & Cards",
+    quote: "Ditch manual spreadsheets. Configure class test structures, calculate student averages, and compile reports automatically.",
     modules: [
-      { name: "Examinations", details: ["Term & class test config", "Gradebook setup by standard", "Automated score averages"] },
-      { name: "Progress Reports", details: ["Printable report generation", "Performance tracking trends", "Subject performance analysis"] },
-      { name: "Additional Modules", details: ["Moral Attendance", "Moral Grading System", "Mentoring logs"] }
+      { name: "Examinations setup", details: ["Term exam schedules", "Grade scales configurator", "Class-average tracker"] },
+      { name: "Automated Reports", details: ["Single-click PDF report cards", "Subject progress trends", "Academic graphs"] },
+      { name: "Moral Grading", details: ["Moral attendance logs", "Mentoring logs", "Extracurricular tags"] }
     ]
   },
   {
     id: "finance",
     name: "Finance & Wallet",
     icon: Wallet,
+    stat: "Cashless",
+    statLabel: "Fee Gateway & Wallet",
+    quote: "Facilitate secure, hassle-free online fee payments for parents and enable smart campus wallet purchases for students.",
     modules: [
-      { name: "Fee Management", details: ["Custom scholarships/discounts", "Subscription-based structures", "Invoicing & gateway support"] },
-      { name: "Student Wallet", details: ["Cashless card-based purchases", "Parent-funded deposits", "Fine deductions & balance logs"] },
-      { name: "Deposit & Refund", details: ["Collect deposit bounds", "Deductions & refunds logs", "Fee reconciliation"] },
-      { name: "Accounts & Bookkeeping", details: ["Income & expense logs", "Profit & loss reports", "Non-accountant interface"] }
+      { name: "Fee collections", details: ["Scholarship concessions", "Gateway payment forms", "Automatic reminders"] },
+      { name: "Campus Wallet", details: ["RFID student purchases", "Parent-controlled limits", "Spend statements"] },
+      { name: "Reconciliation", details: ["Profit & loss ledgers", "Concession registers", "Refund logs"] }
     ]
   },
   {
     id: "logistics",
     name: "Logistics & Staff",
     icon: BusFront,
+    stat: "GPS Tracking",
+    statLabel: "Fleet & Staff Roster",
+    quote: "Oversee school transport vehicles, campus store inventories, and teacher payroll cycles from one centralized panel.",
     modules: [
-      { name: "Transportation", details: ["Route & vehicle registries", "GPS tracking ready", "Integrated transport fees"] },
-      { name: "Inventory & Store", details: ["Asset lifecycle tracking", "Store management", "Wallet purchase sync"] },
-      { name: "Medical & Sick Room", details: ["Health record cards", "Sick room visit logs", "Parental alerts"] },
-      { name: "Payroll Management", details: ["Salary profiles register", "Attendance-linked payroll", "Payslips & disbursements logs"] },
-      { name: "Ticket System", details: ["Ticket issue generation", "Routing to department", "Escalation workflows"] }
+      { name: "Transport Fleet", details: ["GPS vehicle registries", "Route allocations", "Transport fee tags"] },
+      { name: "Store Inventory", details: ["Asset registers", "Wallet checkout sync", "Low-stock flags"] },
+      { name: "Staff & Payroll", details: ["Rosters & salary details", "Leave balance tracker", "Automated disbursements"] }
     ]
   }
 ];
@@ -74,87 +84,106 @@ const categories = [
 export default function ModulesExplorer() {
   const [activeTab, setActiveTab] = useState("admin");
   const activeCategory = categories.find((cat) => cat.id === activeTab) || categories[0];
-  const Icon = activeCategory.icon;
 
   return (
-    <section id="features" className="w-full py-16 md:py-22 bg-slate-50 border-y border-slate-200/50 font-sans">
-      <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
+    <section id="features" className="w-full py-16 md:py-20 bg-gradient-to-br from-emerald-950 via-teal-950 to-emerald-900 font-sans relative overflow-hidden">
+
+      <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl relative z-10">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-          <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-4 inline-block">
-            Modules Explorer
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4 md:mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight mb-4 md:mb-5">
             Platform Deep-Dive by Module
           </h2>
-          <p className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed">
+          <p className="text-base sm:text-lg text-white/70 font-semibold leading-relaxed">
             Class Nex integrates all areas of operations into a modular platform. Explore features designed for administrators, teachers, and accountants.
           </p>
         </div>
 
         {/* Tabs Row */}
-        <div className="flex flex-nowrap overflow-x-auto md:flex-wrap md:justify-center gap-2 mb-6 md:mb-10 border-b border-slate-200 pb-4 md:pb-6 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-          {categories.map((cat) => {
-            const Icon = cat.icon;
-            const isActive = cat.id === activeTab;
-            return (
-              <button
-                key={cat.id}
-                onClick={() => setActiveTab(cat.id)}
-                className={`flex items-center gap-1 px-3.5 py-2 md:px-5 md:py-3 rounded-full text-xs md:text-sm font-bold transition-all uppercase cursor-pointer whitespace-nowrap shrink-0 ${
-                  isActive 
-                    ? "bg-primary text-white shadow-md shadow-primary/20" 
-                    : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
-                }`}
-              >
-                <Icon className="w-3.5 h-3.5 md:w-4 md:h-4" />
-                <span>{cat.name}</span>
-              </button>
-            );
-          })}
+        <div className="relative border-b border-white/15 pb-4 mb-10 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+          <div className="flex justify-start md:justify-center gap-8 md:gap-14 select-none shrink-0 min-w-max">
+            {categories.map((cat) => {
+              const isActive = cat.id === activeTab;
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveTab(cat.id)}
+                  className={`text-xs sm:text-sm font-bold tracking-widest uppercase transition-colors relative pb-4 focus:outline-none shrink-0 cursor-pointer ${
+                    isActive ? "text-white" : "text-white/50 hover:text-white"
+                  }`}
+                >
+                  {cat.name}
+                  {isActive && (
+                    <motion.div 
+                      layoutId="activeTabUnderline"
+                      className="absolute bottom-[-17px] left-0 right-0 h-[3px] bg-white rounded-full" 
+                    />
+                  )}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
-        {/* Modules Grid */}
+        {/* Main Card Container */}
         <motion.div
           key={activeTab}
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6"
+          transition={{ duration: 0.4 }}
+          className="bg-white rounded-[32px] overflow-hidden flex flex-col lg:flex-row shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-slate-100"
         >
-          {activeCategory.modules.map((mod, i) => (
-            <div 
-              key={i} 
-              className="bg-white border border-slate-200/50 rounded-3xl p-6 shadow-xs hover:shadow-xl hover:-translate-y-1 hover:border-primary/10 transition-all duration-300 relative overflow-hidden group flex flex-col justify-between"
-            >
-              <div>
-                {/* Header Icon + Number Label */}
-                <div className="flex justify-between items-start mb-4 md:mb-6">
-                  <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-500 group-hover:bg-primary/10 group-hover:text-primary transition-colors duration-300">
-                    <Icon className="w-5 h-5" />
-                  </div>
-                  <span className="text-[10px] font-black text-slate-300 tracking-widest uppercase">
-                    MODULE 0{i + 1}
-                  </span>
-                </div>
-                
-                <h3 className="text-lg font-black text-slate-800 tracking-tight mb-4 group-hover:text-primary transition-colors duration-300">
-                  {mod.name}
-                </h3>
-                
-                <ul className="space-y-3">
-                  {mod.details.map((detail, idx) => (
-                    <li key={idx} className="flex items-start gap-2.5 text-sm text-slate-500 font-semibold leading-relaxed">
-                      <div className="flex items-center justify-center w-4 h-4 rounded-full bg-emerald-50 text-primary shrink-0 mt-0.5 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                        <Check className="w-2.5 h-2.5" />
-                      </div>
-                      <span className="group-hover:text-slate-600 transition-colors duration-300">{detail}</span>
-                    </li>
-                  ))}
-                </ul>
+          {/* Left Panel (Sidebar) */}
+          <div className="lg:w-1/3 p-8 sm:p-10 border-b lg:border-b-0 lg:border-r border-slate-100 flex flex-col justify-between shrink-0 bg-slate-50/50">
+            <div>
+              <div className="text-[56px] font-black text-slate-800 tracking-tighter leading-none mb-3">
+                {activeCategory.stat}
+              </div>
+              <div className="text-sm font-black text-slate-400 uppercase tracking-widest leading-normal">
+                {activeCategory.statLabel}
               </div>
             </div>
-          ))}
+
+            <div className="mt-10 lg:mt-0">
+              <a 
+                href="#contact" 
+                className="border border-slate-800 hover:bg-slate-900 hover:text-white text-xs font-black uppercase tracking-widest px-6 py-3 rounded-full transition-all inline-flex items-center gap-2 select-none"
+              >
+                <span>REQUEST DEMO</span>
+                <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-ping" />
+              </a>
+            </div>
+          </div>
+
+          {/* Right Panel (Content) */}
+          <div className="lg:w-2/3 p-8 sm:p-10 flex flex-col justify-between bg-white">
+            <div className="space-y-6">
+              <div className="text-6xl text-slate-200 font-serif leading-none select-none h-4">“</div>
+              <p className="text-xl md:text-2xl text-slate-600 font-semibold leading-relaxed">
+                {activeCategory.quote}
+              </p>
+            </div>
+
+            {/* Sub-modules List */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 pt-8 border-t border-slate-100">
+              {activeCategory.modules.map((mod, i) => (
+                <div 
+                  key={i} 
+                  className="bg-slate-50/70 border border-slate-100 p-5 rounded-2xl flex items-start gap-3.5 hover:border-primary/20 hover:bg-slate-50 transition-all duration-300"
+                >
+                  <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-emerald-50 text-primary shrink-0 mt-0.5">
+                    <Check className="w-4.5 h-4.5" />
+                  </div>
+                  <div>
+                    <h4 className="text-base sm:text-lg font-bold text-slate-800 mb-1">{mod.name}</h4>
+                    <p className="text-xs sm:text-sm text-slate-400 font-semibold leading-relaxed">
+                      {mod.details.join(" • ")}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

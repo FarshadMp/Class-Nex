@@ -25,10 +25,10 @@ export default function Home() {
       <Highlights />
       <CoreOfferings />
       <ModulesExplorer />
-      <AppsSection />
       <WhyClassNex />
+      <AppsSection />
       <AboutUs />
-      <TestimonialsCarousel />
+      <TestimonialsCarousel /> 
       <FinalCTA />
       <Footer />
     </div>
