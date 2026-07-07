@@ -6,19 +6,19 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
 const platformLinks = [
-  { name: "Academics", href: "#academics" },
-  { name: "Admissions & Enquiry", href: "#admissions" },
-  { name: "Finance & Fees", href: "#finance" },
-  { name: "HR & Payroll", href: "#payroll" },
-  { name: "Attendance", href: "#attendance" },
-  { name: "Transportation", href: "#transportation" },
-  { name: "Communication", href: "#communication" },
+  { name: "Academics", href: "/platform/academics" },
+  { name: "Admissions & Enquiry", href: "/platform/admissions" },
+  { name: "Finance & Fees", href: "/platform/finance" },
+  { name: "HR & Payroll", href: "/platform/payroll" },
+  { name: "Attendance", href: "/platform/attendance" },
+  { name: "Transportation", href: "/platform/transportation" },
+  { name: "Communication", href: "/platform/communication" },
 ];
 
 const solutionsLinks = [
-  { name: "Schools", href: "#schools" },
-  { name: "School Groups", href: "#groups" },
-  { name: "International Schools", href: "#international" },
+  { name: "Schools", href: "/solutions/schools" },
+  { name: "School Groups", href: "/solutions/school-groups" },
+  { name: "International Schools", href: "/solutions/international" },
 ];
 
 export default function Navbar() {
@@ -40,7 +40,7 @@ export default function Navbar() {
 
           {/* Desktop Nav Links */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Link href="#" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
+            <Link href="/" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
               Home
             </Link>
 
@@ -100,13 +100,13 @@ export default function Navbar() {
               </AnimatePresence>
             </div>
 
-            <Link href="#apps" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
+            <Link href="/apps" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
               Apps
             </Link>
-            <Link href="#about" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
+            <Link href="/about" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
               About Us
             </Link>
-            <Link href="#contact" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
+            <Link href="/contact" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
               Contact
             </Link>
           </nav>
@@ -114,13 +114,13 @@ export default function Navbar() {
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
             <Link
-              href="#contact"
+              href="/contact"
               className="px-5 py-2.5 border border-primary text-primary hover:bg-primary/5 rounded-full text-sm sm:text-base font-bold transition-all uppercase"
             >
               Contact Us
             </Link>
             <Link
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary-hover text-white rounded-full text-sm sm:text-base font-bold shadow-md shadow-primary/10 hover:shadow-lg transition-all uppercase group"
             >
               <span>Book a Demo</span>
@@ -155,7 +155,7 @@ export default function Navbar() {
             className="lg:hidden bg-white border-t border-slate-100 px-4 py-6 space-y-4 shadow-xl overflow-hidden"
           >
             <div className="grid gap-2">
-              <Link href="#" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-bold text-slate-700 hover:bg-slate-50 rounded-lg">Home</Link>
+              <Link href="/" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-bold text-slate-700 hover:bg-slate-50 rounded-lg">Home</Link>
               
               <div className="px-3 py-1 text-base font-bold text-slate-800">Platform Features:</div>
               <div className="grid grid-cols-2 gap-0 pl-4">
@@ -171,14 +171,14 @@ export default function Navbar() {
                 ))}
               </div>
 
-              <Link href="#apps" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-bold text-slate-700 hover:bg-slate-50 rounded-lg">Apps</Link>
-              <Link href="#about" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-bold text-slate-700 hover:bg-slate-50 rounded-lg">About Us</Link>
-              <Link href="#contact" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-bold text-slate-700 hover:bg-slate-50 rounded-lg">Contact</Link>
+              <Link href="/apps" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-bold text-slate-700 hover:bg-slate-50 rounded-lg">Apps</Link>
+              <Link href="/about" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-bold text-slate-700 hover:bg-slate-50 rounded-lg">About Us</Link>
+              <Link href="/contact" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-base font-bold text-slate-700 hover:bg-slate-50 rounded-lg">Contact</Link>
             </div>
 
             <div className="border-t border-slate-100 pt-4 flex flex-row gap-3">
-              <Link href="#contact" onClick={() => setIsOpen(false)} className="flex-1 text-center py-2.5 border border-primary text-primary rounded-full text-sm font-bold uppercase">Contact</Link>
-              <Link href="#contact" onClick={() => setIsOpen(false)} className="flex-1 text-center py-2.5 bg-primary text-white rounded-full text-sm font-bold uppercase flex items-center justify-center gap-1">
+              <Link href="/contact" onClick={() => setIsOpen(false)} className="flex-1 text-center py-2.5 border border-primary text-primary rounded-full text-sm font-bold uppercase">Contact</Link>
+              <Link href="/contact" onClick={() => setIsOpen(false)} className="flex-1 text-center py-2.5 bg-primary text-white rounded-full text-sm font-bold uppercase flex items-center justify-center gap-1">
                 <span>Demo</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
