@@ -131,12 +131,12 @@ export default function ModulesExplorer() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="bg-white rounded-[32px] overflow-hidden flex flex-col lg:flex-row shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-slate-100"
+          className="bg-white rounded-[22px] md:rounded-[32px] overflow-hidden flex flex-col lg:flex-row shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-slate-100"
         >
           {/* Left Panel (Sidebar) */}
-          <div className="lg:w-1/3 p-8 sm:p-10 border-b lg:border-b-0 lg:border-r border-slate-100 flex flex-col justify-between shrink-0 bg-slate-50/50">
+          <div className="lg:w-1/3 p-6 sm:p-10 border-b lg:border-b-0 lg:border-r border-slate-100 flex flex-col justify-between shrink-0 bg-slate-50/50">
             <div>
-              <div className="text-[56px] font-black text-slate-800 tracking-tighter leading-none mb-3">
+              <div className="text-[56px] font-bold text-slate-800 tracking-tighter leading-none mb-3">
                 {activeCategory.stat}
               </div>
               <div className="text-sm font-black text-slate-400 uppercase tracking-widest leading-normal">
@@ -156,7 +156,7 @@ export default function ModulesExplorer() {
           </div>
 
           {/* Right Panel (Content) */}
-          <div className="lg:w-2/3 p-8 sm:p-10 flex flex-col justify-between bg-white">
+          <div className="lg:w-2/3 p-6 sm:p-10 flex flex-col justify-between bg-white">
             <div className="space-y-6">
               <div className="text-6xl text-slate-200 font-serif leading-none select-none h-4">“</div>
               <p className="text-xl md:text-2xl text-slate-600 font-semibold leading-relaxed">
@@ -165,7 +165,7 @@ export default function ModulesExplorer() {
             </div>
 
             {/* Sub-modules List */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 pt-8 border-t border-slate-100">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 mt-6 md:mt-10 pt-8 border-t border-slate-100">
               {activeCategory.modules.map((mod, i) => (
                 <div 
                   key={i} 
@@ -175,8 +175,8 @@ export default function ModulesExplorer() {
                     <Check className="w-4.5 h-4.5" />
                   </div>
                   <div>
-                    <h4 className="text-base sm:text-lg font-bold text-slate-800 mb-1">{mod.name}</h4>
-                    <p className="text-xs sm:text-sm text-slate-400 font-semibold leading-relaxed">
+                    <h4 className="text-lg sm:text-xl font-bold text-slate-800 mb-1">{mod.name}</h4>
+                    <p className="text-base sm:text-sm text-slate-400 font-semibold leading-[1.4]">
                       {mod.details.join(" • ")}
                     </p>
                   </div>

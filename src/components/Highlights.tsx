@@ -115,12 +115,12 @@ export default function Highlights() {
                   </div>
                   
                   {/* Title */}
-                  <h3 className="text-lg sm:text-[24px] font-bold text-slate-800 mb-2.5 group-hover:text-primary transition-colors">
+                  <h3 className="text-2xl sm:text-[24px] font-bold text-slate-800 mb-2.5 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   
                   {/* Description */}
-                  <p className="text-sm sm:text-lg text-slate-400 font-semibold leading-[1.4] mb-6">
+                  <p className="text-base sm:text-lg text-slate-400 font-semibold leading-[1.4] mb-6">
                     {item.description}
                   </p>
                 </div>

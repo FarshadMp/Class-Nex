@@ -161,14 +161,14 @@ export default function AppsSection() {
               >
                 <div>
                   {/* Badge */}
-                  <span className={`inline-block text-[11px] font-bold px-3 py-1 rounded-full border mb-5 ${app.badgeColor}`}>
+                  <span className={`inline-block text-[14px] md:text-[11px] font-bold px-3 py-1 rounded-full border mb-5 ${app.badgeColor}`}>
                     {app.badge}
                   </span>
                   {/* Title & Tagline */}
                   <h3 className="text-3xl font-bold text-slate-800 tracking-tight mb-2.5">{app.name}</h3>
-                  <p className="text-sm font-semibold text-slate-400 px-2 leading-relaxed mb-6">{app.tagline}</p>
+                  <p className="text-lg md:text-base sm:text-sm font-semibold text-slate-400 px-2 leading-[1.4] mb-6">{app.tagline}</p>
                   {/* Action Button */}
-                  <button className="border border-slate-200 hover:border-slate-300 text-xs font-bold px-4 py-2 hover:bg-slate-50 transition-colors rounded-lg mb-8 inline-block select-none">
+                  <button className="border border-slate-200 hover:border-slate-300 text-lg md:text-base sm:text-sm font-bold px-4 py-2 hover:bg-slate-50 transition-colors rounded-lg mb-8 inline-block select-none">
                     Explore App Specs
                   </button>
                 </div>
