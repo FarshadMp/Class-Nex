@@ -40,7 +40,7 @@ export default function AboutValues() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
           {values.map((val, index) => {
             const Icon = val.icon;
             return (
@@ -50,7 +50,7 @@ export default function AboutValues() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white border border-slate-200/60 p-8 rounded-2xl shadow-sm text-left flex gap-5 hover:shadow-md transition-shadow group"
+                className="bg-white border border-slate-200/60 p-8 rounded-2xl text-left flex gap-5 transition-shadow group"
               >
                 <div className="w-12 h-12 bg-primary/5 text-primary border border-primary/10 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
                   <Icon className="w-6 h-6" />

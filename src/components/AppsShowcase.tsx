@@ -14,7 +14,7 @@ const ParentPreview = () => (
     <div className="space-y-2">
       <div className="bg-white border border-slate-100 p-3 rounded-xl shadow-xs flex items-center justify-between">
         <div>
-          <div className="text-[9px] text-slate-400 font-bold uppercase">Today's Attendance</div>
+          <div className="text-[9px] text-slate-400 font-bold uppercase">Today&apos;s Attendance</div>
           <div className="font-bold text-slate-700 mt-0.5">Present (Checked in at 07:55 AM)</div>
         </div>
         <span className="text-[10px] bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded-full font-bold">On Time</span>
@@ -167,9 +167,9 @@ export default function AppsShowcase() {
             >
               {/* Bullets & descriptions */}
               <div className="lg:col-span-7 text-left space-y-5">
-                <div className="space-y-2">
+                <div className="space-y-1">
                   <h3 className="text-2xl sm:text-3xl font-bold text-slate-900">{currentTab.name}</h3>
-                  <p className="text-base sm:text-lg text-slate-500 font-semibold italic">{currentTab.tagline}</p>
+                  <p className="text-base sm:text-lg text-slate-500 font-semibold">{currentTab.tagline}</p>
                 </div>
                 
                 <ul className="space-y-3.5 pt-2">

@@ -40,7 +40,7 @@ export default function Navbar() {
 
           {/* Desktop Nav Links */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Link href="/" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
+            <Link href="/" className="text-lg font-bold text-slate-700 hover:text-primary transition-colors">
               Home
             </Link>
 

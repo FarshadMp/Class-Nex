@@ -24,7 +24,7 @@ export default function FeatureFAQ({ faqs }: FeatureFAQProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start">
           
           {/* Header left column */}
-          <div className="lg:col-span-5 space-y-4">
+          <div className="lg:col-span-5 space-y-3">
             <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full inline-block">
               Frequently Asked Questions
             </span>

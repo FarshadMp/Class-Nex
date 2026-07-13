@@ -2,6 +2,10 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import InnerHero from "@/components/InnerHero";
 import AppsShowcase from "@/components/AppsShowcase";
+import AppsFeatureGrid from "@/components/AppsFeatureGrid";
+import AppsTimeline from "@/components/AppsTimeline";
+import AppsComparison from "@/components/AppsComparison";
+import AppsFAQ from "@/components/AppsFAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import { CheckCircle, Shield } from "lucide-react";
@@ -49,6 +53,10 @@ export default function AppsPage() {
         rightContent={appsRightContent}
       />
       <AppsShowcase />
+      <AppsFeatureGrid />
+      <AppsTimeline />
+      <AppsComparison />
+      <AppsFAQ />
       <FinalCTA />
       <Footer />
     </div>

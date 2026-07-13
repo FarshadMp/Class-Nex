@@ -20,13 +20,13 @@ const offices = [
 
 export default function ContactInfo() {
   return (
-    <div className="space-y-8 text-left">
-      <div className="space-y-4">
+    <div className="space-y-6 text-left">
+      <div className="space-y-3">
         <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full inline-block">
           Get in Touch
         </span>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
-          Let's Start a Conversation
+          Let&apos;s Start a Conversation
         </h2>
         <p className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed">
           Have questions about pricing plans, module customization, or security configurations? Drop us a note or call our regional desks directly.
@@ -36,7 +36,7 @@ export default function ContactInfo() {
       {/* Offices list */}
       <div className="space-y-6">
         {offices.map((office) => (
-          <div key={office.region} className="bg-slate-50/50 border border-slate-200/60 p-5 rounded-2xl space-y-3.5">
+          <div key={office.region} className="bg-white border border-slate-200/60 p-5 rounded-2xl space-y-3.5">
             <h4 className="text-lg font-bold text-slate-800 flex items-center gap-2">
               <MapPin className="w-4 h-4 text-primary" /> {office.region}
             </h4>
@@ -57,8 +57,8 @@ export default function ContactInfo() {
       </div>
 
       {/* General contacts */}
-      <div className="border-t border-slate-100 pt-6 flex gap-6 text-sm font-semibold text-slate-500">
-        <span className="flex items-center gap-2">
+      <div className="border-t border-slate-200 pt-6 flex gap-6 text-sm font-semibold text-slate-500">
+        <span className="flex items-center gap-2 text-base">
           <Clock className="w-4 h-4 text-primary" /> Support Desk: 24/7 (SaaS Tier)
         </span>
       </div>

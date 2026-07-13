@@ -35,7 +35,7 @@ export default function AboutStats() {
   return (
     <section className="py-16 md:py-24 bg-slate-50 border-y border-slate-200/50 font-sans">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (

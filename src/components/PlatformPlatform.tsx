@@ -16,7 +16,7 @@ export default function PlatformPlatform() {
         </div>
 
         {/* 4-Card Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5 w-full">
           
           {/* Card 1: AI Chat Assistant */}
           <div className="relative bg-white border border-slate-200/50 rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:border-primary/20 transition-all duration-300 group min-h-[540px]">

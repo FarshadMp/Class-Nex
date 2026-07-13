@@ -48,7 +48,7 @@ export default function ContactForm() {
 
   return (
     <div className="bg-white border border-slate-200/60 p-6 sm:p-8 rounded-3xl shadow-xl shadow-slate-100/30 text-left">
-      <h3 className="text-2xl font-bold text-slate-900 mb-6">Book a Demo & Quote</h3>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Book a Demo & Quote</h3>
       <form onSubmit={handleSubmit} className="space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-1.5">
