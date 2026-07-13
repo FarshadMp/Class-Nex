@@ -15,9 +15,9 @@ interface FeatureGridProps {
 
 export default function FeatureGrid({ description, benefits, subFeatures }: FeatureGridProps) {
   return (
-    <section className="py-16 md:py-22 bg-slate-50 border-t border-slate-200/40 font-sans">
+    <section className="py-16 md:py-20 bg-slate-50 border-t border-slate-200/40 font-sans">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start text-left">
           
           {/* Benefits Column */}
           <div className="lg:col-span-5 space-y-5">

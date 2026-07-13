@@ -23,13 +23,13 @@ export default function InnerHero({
   rightContent
 }: InnerHeroProps) {
   return (
-    <section className="relative pt-32 pb-12 md:pt-40 md:pb-16 bg-[#fbfbf9] overflow-hidden font-sans">
+    <section className="relative pt-32 md:pt-40 pb-16 md:pb-20 bg-[#fbfbf9] overflow-hidden font-sans">
       {/* Background patterns */}
       <div className="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center text-left">
           
           {/* Left Text Column */}
           <div className="lg:col-span-7 space-y-4">

@@ -22,13 +22,13 @@ const aboutRightContent = (
     </div>
     
     <blockquote className="border-l-4 border-primary pl-4 py-1 text-slate-700 font-semibold text-base sm:text-lg mb-6 leading-relaxed">
-      "Our mission is simple: to make school management so seamless that educators can focus entirely on teaching, and students on learning."
+      &quot;Our mission is simple: to make school management so seamless that educators can focus entirely on teaching, and students on learning.&quot;
     </blockquote>
     
     <div className="flex gap-2">
-      <span className="px-3 py-1 bg-slate-50 border border-slate-250 text-slate-500 font-bold text-xs rounded-lg">Reliable Cloud</span>
-      <span className="px-3 py-1 bg-slate-50 border border-slate-250 text-slate-500 font-bold text-xs rounded-lg">AI Automation</span>
-      <span className="px-3 py-1 bg-slate-50 border border-slate-250 text-slate-500 font-bold text-xs rounded-lg">GDPR Compliant</span>
+      <span className="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-500 font-bold text-xs rounded-lg">Reliable Cloud</span>
+      <span className="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-500 font-bold text-xs rounded-lg">AI Automation</span>
+      <span className="px-3 py-1 bg-slate-50 border border-slate-200 text-slate-500 font-bold text-xs rounded-lg">GDPR Compliant</span>
     </div>
   </div>
 );

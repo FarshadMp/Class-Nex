@@ -83,14 +83,14 @@ const apps = [
 
 export default function AppsSection() {
   return (
-    <section id="apps" className="w-full py-16 md:py-22 bg-slate-50/20 font-sans text-left relative overflow-hidden">
+    <section id="apps" className="w-full py-16 md:py-20 bg-slate-50/20 font-sans text-left relative overflow-hidden">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-5 md:mb-5">
           <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-4 inline-block">
             Dedicated Apps
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-3 md:mb-6">
             One School. <br className="block sm:hidden" /> Three Dedicated Apps.
           </h2>
           <p className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed mb-6">

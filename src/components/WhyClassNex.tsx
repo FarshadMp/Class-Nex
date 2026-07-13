@@ -18,7 +18,7 @@ const steps = [
 
 export default function WhyClassNex() {
   return (
-    <section className="w-full py-16 md:py-22 bg-slate-50 border-y border-slate-200/50 font-sans text-left">
+    <section className="w-full py-16 md:py-20 bg-slate-50 border-y border-slate-200/50 font-sans text-left">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           
@@ -27,7 +27,7 @@ export default function WhyClassNex() {
             <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-3 md:mb-4 inline-block">
               Why Class Nex
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-4 md:mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-3 md:mb-6">
               The Future of Smart School Management
             </h2>
             <div className="space-y-4 md:space-y-6 text-base sm:text-lg text-slate-500 font-semibold leading-relaxed mb-6 md:mb-8">

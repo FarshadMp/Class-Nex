@@ -60,7 +60,7 @@ export default function AboutStats() {
                     </div>
                   </div>
                 </div>
-                <p className="text-sm font-semibold text-slate-500 mt-4 border-t border-slate-100 pt-3 leading-relaxed">
+                <p className="text-base font-semibold text-slate-500 mt-4 border-t border-slate-100 pt-3 leading-[1.3]">
                   {stat.description}
                 </p>
               </motion.div>

@@ -17,18 +17,18 @@ export default function FeatureWorkflow({ workflow }: FeatureWorkflowProps) {
   if (!workflow || workflow.length === 0) return null;
 
   return (
-    <section className="py-16 md:py-22 bg-white border-t border-slate-200/40 font-sans text-left">
+    <section className="py-16 md:py-20 bg-white border-t border-slate-200/40 font-sans text-left">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
           <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-3 md:mb-4 inline-block">
             Workflow Process
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-3 md:mb-6">
             How It Integrates Into Operations
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 relative">
           {workflow.map((item, index) => (
             <motion.div
               key={item.step}
@@ -48,8 +48,8 @@ export default function FeatureWorkflow({ workflow }: FeatureWorkflowProps) {
                 <div className="hidden lg:block absolute top-10 left-20 right-[-12px] h-[1.5px] bg-slate-200/85 pointer-events-none -z-10" />
               )}
 
-              <div className="space-y-1">
-                <h4 className="text-base sm:text-lg font-bold text-slate-800 tracking-tight group-hover:text-primary transition-colors mb-1">
+              <div className="space-y-0">
+                <h4 className="text-xl sm:text-2xl font-bold text-slate-800 tracking-tight group-hover:text-primary transition-colors mb-1">
                   {item.title}
                 </h4>
                 <p className="text-xs sm:text-sm text-slate-400 font-semibold leading-relaxed">

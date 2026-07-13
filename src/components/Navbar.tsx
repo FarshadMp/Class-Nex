@@ -63,7 +63,7 @@ export default function Navbar() {
                     className="absolute left-0 mt-1 w-64 bg-white border border-slate-100 rounded-2xl shadow-xl p-3 z-50 grid gap-1"
                   >
                     {platformLinks.map((item) => (
-                      <Link key={item.name} href={item.href} className="px-4 py-2.5 text-sm font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">
+                      <Link key={item.name} href={item.href} className="px-4 py-2.5 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">
                         {item.name}
                       </Link>
                     ))}
@@ -91,7 +91,7 @@ export default function Navbar() {
                     className="absolute left-0 mt-1 w-56 bg-white border border-slate-100 rounded-2xl shadow-xl p-3 z-50 grid gap-1"
                   >
                     {solutionsLinks.map((item) => (
-                      <Link key={item.name} href={item.href} className="px-4 py-2.5 text-sm font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">
+                      <Link key={item.name} href={item.href} className="px-4 py-2.5 text-base font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 rounded-xl transition-all">
                         {item.name}
                       </Link>
                     ))}
@@ -160,14 +160,14 @@ export default function Navbar() {
               <div className="px-3 py-1 text-base font-bold text-slate-800">Platform Features:</div>
               <div className="grid grid-cols-2 gap-0 pl-4">
                 {platformLinks.map(link => (
-                  <Link key={link.name} href={link.href} onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-slate-600 hover:text-primary">{link.name}</Link>
+                  <Link key={link.name} href={link.href} onClick={() => setIsOpen(false)} className="py-1 text-base font-semibold text-slate-600 hover:text-primary">{link.name}</Link>
                 ))}
               </div>
 
               <div className="px-3 py-2 text-base font-bold text-slate-400">Solutions:</div>
               <div className="grid gap-1 pl-4">
                 {solutionsLinks.map(link => (
-                  <Link key={link.name} href={link.href} onClick={() => setIsOpen(false)} className="py-1 text-sm font-semibold text-slate-600 hover:text-primary">{link.name}</Link>
+                  <Link key={link.name} href={link.href} onClick={() => setIsOpen(false)} className="py-1 text-base font-semibold text-slate-600 hover:text-primary">{link.name}</Link>
                 ))}
               </div>
 

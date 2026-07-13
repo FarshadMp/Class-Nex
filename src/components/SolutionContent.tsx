@@ -15,9 +15,9 @@ interface SolutionContentProps {
 
 export default function SolutionContent({ targetAudience, challenges, features }: SolutionContentProps) {
   return (
-    <section className="py-16 md:py-22 bg-slate-50 border-t border-slate-200/40 font-sans">
+    <section className="py-16 md:py-20 bg-slate-50 border-t border-slate-200/40 font-sans">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start text-left">
           
           {/* Challenges Column */}
           <div className="lg:col-span-5 space-y-6">
@@ -34,10 +34,10 @@ export default function SolutionContent({ targetAudience, challenges, features }
               <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest">
                 Common Operational Pain Points
               </h4>
-              <ul className="space-y-3.5">
+              <ul className="space-y-1 md:space-y-3">
                 {challenges.map((challenge, idx) => (
-                  <li key={idx} className="flex gap-3 text-xs sm:text-sm font-semibold text-slate-500 leading-relaxed">
-                    <AlertCircle className="w-4 h-4 text-rose-500 shrink-0 mt-0.5" />
+                  <li key={idx} className="flex gap-2 text-sm sm:text-base font-semibold text-slate-500 leading-relaxed">
+                    <AlertCircle className="w-4 h-4 text-rose-500 shrink-0 mt-1.5" />
                     <span>{challenge}</span>
                   </li>
                 ))}

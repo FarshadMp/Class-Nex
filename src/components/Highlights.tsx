@@ -81,7 +81,7 @@ const highlights = [
 
 export default function Highlights() {
   return (
-    <section className="w-full py-16 md:py-22 bg-slate-50/30 font-sans text-left relative overflow-hidden">
+    <section className="w-full py-16 md:py-20 bg-slate-50/30 font-sans text-left relative overflow-hidden">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         {/* Header */}
         <div className="max-w-3xl mb-10 md:mb-16">

@@ -80,7 +80,7 @@ const AIAgentsMockup = () => (
 
 export default function CoreOfferings() {
   return (
-    <section className="w-full py-16 md:py-22 bg-slate-50/40 border-y border-slate-200/40 text-slate-900 font-sans overflow-hidden relative">
+    <section className="w-full py-16 md:py-20 bg-slate-50/40 border-y border-slate-200/40 text-slate-900 font-sans overflow-hidden relative">
       {/* CSS keyframe animations injection */}
       <style>{`
         @keyframes chatFade1 {

@@ -44,7 +44,7 @@ export default function TestimonialsCarousel() {
   const nextClient = testimonials[nextIndex];
 
   return (
-    <section className="w-full py-16 md:py-22 bg-[#fbfbf9] font-sans text-left overflow-hidden border-t border-slate-200/30">
+    <section className="w-full py-16 md:py-20 bg-[#fbfbf9] font-sans text-left overflow-hidden border-t border-slate-200/30">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 md:gap-6 lg:gap-8 items-center w-full">
           

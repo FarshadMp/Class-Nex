@@ -5,7 +5,7 @@ import { Info } from "lucide-react";
 
 export default function AboutUs() {
   return (
-    <section id="about" className="w-full py-16 md:py-22 bg-white font-sans text-left relative overflow-hidden">
+    <section id="about" className="w-full py-16 md:py-20 bg-white font-sans text-left relative overflow-hidden">
       {/* Decorative Glows */}
       <div className="absolute left-0 top-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute right-0 bottom-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
@@ -18,7 +18,7 @@ export default function AboutUs() {
             <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-4 inline-block">
               About Class Nex
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-6 md:mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-3 md:mb-6 md:mb-8">
               Redefining How Schools Operate
             </h2>
             <div className="border-l-4 border-primary pl-4 md:pl-6">

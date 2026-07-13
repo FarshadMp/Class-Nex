@@ -79,14 +79,14 @@ export default function Overview() {
   };
 
   return (
-    <section id="platform" className="w-full py-16 md:py-22 bg-slate-50/50 border-y border-slate-200/40 font-sans overflow-hidden">
+    <section id="platform" className="w-full py-16 md:py-20 bg-slate-50/50 border-y border-slate-200/40 font-sans overflow-hidden">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
           <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100/80 px-3 py-1.5 rounded-full mb-4 inline-block">
             Operational Overview
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-3 md:mb-6">
             One Platform, <br className="block sm:hidden" /> Every Operational Area
           </h2>
           <p className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed">

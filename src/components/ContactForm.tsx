@@ -47,7 +47,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="bg-white border border-slate-250/50 p-6 sm:p-8 rounded-3xl shadow-xl shadow-slate-100/30 text-left">
+    <div className="bg-white border border-slate-200/60 p-6 sm:p-8 rounded-3xl shadow-xl shadow-slate-100/30 text-left">
       <h3 className="text-2xl font-bold text-slate-900 mb-6">Book a Demo & Quote</h3>
       <form onSubmit={handleSubmit} className="space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -58,7 +58,7 @@ export default function ContactForm() {
               required
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full bg-slate-50/50 border border-slate-250 focus:border-primary focus:ring-1 focus:ring-primary rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-all"
+              className="w-full bg-slate-50/50 border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-all"
               placeholder="Full Name"
             />
           </div>
@@ -69,7 +69,7 @@ export default function ContactForm() {
               required
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full bg-slate-50/50 border border-slate-250 focus:border-primary focus:ring-1 focus:ring-primary rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-all"
+              className="w-full bg-slate-50/50 border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-all"
               placeholder="name@school.com"
             />
           </div>
@@ -83,7 +83,7 @@ export default function ContactForm() {
               required
               value={formData.school}
               onChange={(e) => setFormData({ ...formData, school: e.target.value })}
-              className="w-full bg-slate-50/50 border border-slate-250 focus:border-primary focus:ring-1 focus:ring-primary rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-all"
+              className="w-full bg-slate-50/50 border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-all"
               placeholder="e.g. International Academy"
             />
           </div>
@@ -94,7 +94,7 @@ export default function ContactForm() {
               required
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              className="w-full bg-slate-50/50 border border-slate-250 focus:border-primary focus:ring-1 focus:ring-primary rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-all"
+              className="w-full bg-slate-50/50 border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-all"
               placeholder="+1 (555) 000-0000"
             />
           </div>
@@ -106,7 +106,7 @@ export default function ContactForm() {
             rows={4}
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            className="w-full bg-slate-50/50 border border-slate-250 focus:border-primary focus:ring-1 focus:ring-primary rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-all resize-none"
+            className="w-full bg-slate-50/50 border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-all resize-none"
             placeholder="Tell us about your campus size, current system, and requirements..."
           />
         </div>

@@ -32,8 +32,18 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
 }
 
-body, button, input, select, textarea, a, span, h1, h2, h3, h4, h5, h6 {
+body, button, input, select, textarea, a, span, h1, h2, h3, h4, h5, h6, p {
   font-family: var(--font-darker-grotesque), "Darker Grotesque", Arial, sans-serif;
+}
+
+p {
+  --text-xs: 0.825rem;
+  --text-sm: 0.95rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.2rem;
+  --text-xl: 1.35rem;
+  --text-2xl: 1.65rem;
+  font-size: 1.0625rem;
 }
 
 .bg-grid-pattern {
