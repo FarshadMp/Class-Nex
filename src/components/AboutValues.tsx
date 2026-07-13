@@ -29,7 +29,7 @@ const values = [
 
 export default function AboutValues() {
   return (
-    <section className="py-16 md:py-24 bg-[#fbfbf9] font-sans">
+    <section className="py-16 md:py-20 bg-[#fbfbf9] font-sans">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-4 inline-block">

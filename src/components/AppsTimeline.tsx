@@ -38,7 +38,7 @@ const timelineSteps = [
 
 export default function AppsTimeline() {
   return (
-    <section className="py-16 md:py-24 bg-slate-50 border-t border-slate-200/50 text-left font-sans relative overflow-hidden">
+    <section className="py-16 md:py-20 bg-slate-50 border-t border-slate-200/50 text-left font-sans relative overflow-hidden">
       {/* Background radial accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       

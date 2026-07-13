@@ -56,7 +56,7 @@ export default function AppsFAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   return (
-    <section className="py-16 md:py-24 bg-slate-50 border-t border-slate-200/50 text-left font-sans">
+    <section className="py-16 md:py-20 bg-slate-50 border-t border-slate-200/50 text-left font-sans">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start max-w-5xl mx-auto">
           {/* Header info */}

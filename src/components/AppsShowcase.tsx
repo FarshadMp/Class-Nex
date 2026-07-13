@@ -129,11 +129,11 @@ export default function AppsShowcase() {
   const Preview = currentTab.previewComponent;
 
   return (
-    <section className="py-16 md:py-24 bg-slate-50 border-t border-slate-200/50 font-sans">
+    <section className="py-16 md:py-20 bg-slate-50 border-t border-slate-200/50 font-sans">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         
         {/* Navigation Tabs */}
-        <div className="flex justify-center gap-2.5 sm:gap-4 mb-12">
+        <div className="flex justify-center gap-2.5 sm:gap-4 mb-8 md:mb-10">
           {appTabs.map((tab) => {
             const Icon = tab.icon;
             const isActive = tab.id === activeTab;
@@ -155,7 +155,7 @@ export default function AppsShowcase() {
         </div>
 
         {/* Tab Content Panels */}
-        <div className="bg-white border border-slate-200/60 rounded-3xl p-6 sm:p-10 shadow-sm min-h-[380px]">
+        <div className="bg-white border border-slate-200/60 rounded-3xl p-6 sm:p-10 min-h-[380px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentTab.id}
@@ -174,8 +174,8 @@ export default function AppsShowcase() {
                 
                 <ul className="space-y-3.5 pt-2">
                   {currentTab.bulletPoints.map((point) => (
-                    <li key={point} className="flex items-start gap-2.5 text-sm font-semibold text-slate-600">
-                      <span className="w-5 h-5 bg-emerald-50 border border-emerald-100 text-primary rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                    <li key={point} className="flex items-start gap-2.5 text-base font-semibold text-slate-600">
+                      <span className="w-5 h-5 bg-emerald-50 border border-emerald-100 text-primary rounded-full flex items-center justify-center shrink-0 mt-1">
                         <Check className="w-3 h-3 stroke-[3]" />
                       </span>
                       <span>{point}</span>
