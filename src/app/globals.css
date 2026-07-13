@@ -12,7 +12,7 @@
   --color-primary-hover: #047857;
   --color-secondary: #16a34a;
   --color-secondary-hover: #15803d;
-  --font-sans: var(--font-darker-grotesque);
+  --font-sans: var(--font-fustat), sans-serif;
   --font-arabic: var(--font-noto-kufi);
   --font-inter: var(--font-inter), sans-serif;
 }
@@ -33,17 +33,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 
 body, button, input, select, textarea, a, span, h1, h2, h3, h4, h5, h6, p {
-  font-family: var(--font-darker-grotesque), "Darker Grotesque", Arial, sans-serif;
-}
-
-p {
-  --text-xs: 0.825rem;
-  --text-sm: 0.95rem;
-  --text-base: 1.0625rem;
-  --text-lg: 1.2rem;
-  --text-xl: 1.35rem;
-  --text-2xl: 1.65rem;
-  font-size: 1.0625rem;
+  font-family: var(--font-fustat), "Fustat", Arial, sans-serif;
 }
 
 .bg-grid-pattern {
@@ -70,6 +60,25 @@ p {
 }
 
 .animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes vertical-marquee {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-vertical-marquee {
+  display: flex;
+  flex-direction: column;
+  animation: vertical-marquee 12s linear infinite;
+}
+
+.animate-vertical-marquee:hover {
   animation-play-state: paused;
 }
 

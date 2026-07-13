@@ -9,7 +9,7 @@ export default function TrustBanner() {
     <section className="w-full pt-16 md:pt-22 bg-white font-sans text-left">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         {/* Banner Card Container */}
-        <div className="relative w-full rounded-[32px] bg-gradient-to-br from-[#15803d] via-[#065f46] to-[#064e3b] p-8 md:p-12 lg:p-14 text-white overflow-hidden shadow-xl">
+        <div className="relative w-full rounded-[26px] md:rounded-[32px] bg-gradient-to-br from-[#15803d] via-[#065f46] to-[#064e3b] p-8 md:p-12 lg:p-14 text-white overflow-hidden shadow-xl">
           {/* Blueprint Grid Pattern */}
           <div 
             className="absolute inset-0 z-0 opacity-15 mix-blend-overlay pointer-events-none"
@@ -52,7 +52,7 @@ export default function TrustBanner() {
             
             {/* Right Side: Paragraph description aligned at bottom right */}
             <div className="lg:col-span-5 lg:pl-6">
-              <p className="text-sm sm:text-lg text-emerald-50/90 font-semibold leading-[1.6]">
+              <p className="text-sm sm:text-base text-emerald-50/90 font-semibold leading-[1.6]">
                 Class Nex replaces fragmented point solutions with a single, intelligent platform covering the full spectrum of academic, administration, finance, and communication operations – purpose-built for modern schools in the GCC.
               </p>
             </div>

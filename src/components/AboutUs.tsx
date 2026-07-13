@@ -15,7 +15,7 @@ export default function AboutUs() {
           
           {/* Left Column: Heading & Quote */}
           <div className="lg:col-span-5 mb-0 lg:mb-0">
-            <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-4 inline-block">
+            <span className="text-xs sm:text-sm font-bold text-primary bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-4 inline-block">
               About Class Nex
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-3 md:mb-6 md:mb-8">
@@ -29,7 +29,7 @@ export default function AboutUs() {
           </div>
 
           {/* Right Column: Paragraph narrative */}
-          <div className="lg:col-span-7 space-y-4 md:space-y-6 text-base sm:text-lg text-slate-500 font-semibold leading-relaxed">
+          <div className="lg:col-span-7 space-y-4 md:space-y-6 text-sm sm:text-base text-slate-600 font-semibold leading-relaxed">
             <p>
               Class Nex is an international EdTech product redefining how schools operate in the digital era. For over 8 years, we have empowered educational institutions with intelligent, efficient, and easy-to-use management solutions.
             </p>

@@ -4,13 +4,13 @@ import React from "react";
 
 const ParentMock = () => (
   <div className="bg-slate-50/85 border border-slate-100 rounded-t-2xl p-4.5 space-y-3 mt-4 h-56 overflow-hidden text-left text-xs font-semibold shadow-inner select-none">
-    <div className="flex items-center justify-between pb-2 border-b border-slate-200/50"><span className="text-[10px] font-black uppercase text-slate-400 tracking-wider">Student Status</span><span className="w-2 h-2 rounded-full bg-emerald-500" /></div>
+    <div className="flex items-center justify-between pb-2 border-b border-slate-200/50"><span className="text-[10px] font-black uppercase text-slate-600 tracking-wider">Student Status</span><span className="w-2 h-2 rounded-full bg-emerald-500" /></div>
     <div className="bg-white border border-slate-100/80 p-2.5 rounded-xl shadow-sm flex items-center justify-between">
-      <div><div className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Attendance</div><div className="font-bold text-slate-700 mt-0.5">Aarav M. — Present</div></div>
+      <div><div className="text-[9px] text-slate-600 font-bold uppercase tracking-wider">Attendance</div><div className="font-bold text-slate-700 mt-0.5">Aarav M. — Present</div></div>
       <span className="text-[9px] bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded-full font-bold">08:02 AM</span>
     </div>
     <div className="bg-white border border-slate-100/80 p-2.5 rounded-xl shadow-sm flex items-center justify-between">
-      <div><div className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Fees & Invoices</div><div className="font-bold text-slate-700 mt-0.5">July Term Fees</div></div>
+      <div><div className="text-[9px] text-slate-600 font-bold uppercase tracking-wider">Fees & Invoices</div><div className="font-bold text-slate-700 mt-0.5">July Term Fees</div></div>
       <span className="text-[9px] bg-rose-50 text-rose-600 px-2.5 py-0.5 rounded-md font-bold cursor-pointer">Pay</span>
     </div>
   </div>
@@ -18,14 +18,14 @@ const ParentMock = () => (
 
 const StudentMock = () => (
   <div className="bg-slate-50/85 border border-slate-100 rounded-t-2xl p-4.5 space-y-3 mt-4 h-56 overflow-hidden text-left text-xs font-semibold shadow-inner select-none">
-    <div className="flex items-center justify-between pb-2 border-b border-slate-200/50"><span className="text-[10px] font-black uppercase text-slate-400 tracking-wider">My Dashboard</span><span className="text-slate-500 font-extrabold text-[10px] bg-white border border-slate-200 px-2 py-0.5 rounded-full">$14.50 Wallet</span></div>
+    <div className="flex items-center justify-between pb-2 border-b border-slate-200/50"><span className="text-[10px] font-black uppercase text-slate-600 tracking-wider">My Dashboard</span><span className="text-slate-500 font-extrabold text-[10px] bg-white border border-slate-200 px-2 py-0.5 rounded-full">$14.50 Wallet</span></div>
     <div className="bg-white border border-slate-100/80 p-2.5 rounded-xl shadow-sm">
-      <div className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Upcoming Class</div>
+      <div className="text-[9px] text-slate-600 font-bold uppercase tracking-wider">Upcoming Class</div>
       <div className="font-bold text-slate-700 mt-0.5">Chemistry (Lab 103)</div>
       <div className="text-[9px] text-indigo-500 font-bold mt-1">Starts in 15 mins</div>
     </div>
     <div className="bg-white border border-slate-100/80 p-2.5 rounded-xl shadow-sm flex items-center justify-between">
-      <div><div className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Assignment</div><div className="font-bold text-slate-700 mt-0.5">Physics Lab Report</div></div>
+      <div><div className="text-[9px] text-slate-600 font-bold uppercase tracking-wider">Assignment</div><div className="font-bold text-slate-700 mt-0.5">Physics Lab Report</div></div>
       <span className="text-[9px] bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full font-bold">Submit</span>
     </div>
   </div>
@@ -33,19 +33,19 @@ const StudentMock = () => (
 
 const TeacherMock = () => (
   <div className="bg-slate-50/85 border border-slate-100 rounded-t-2xl p-4.5 space-y-3 mt-4 h-56 overflow-hidden text-left text-xs font-semibold shadow-inner select-none">
-    <div className="flex items-center justify-between pb-2 border-b border-slate-200/50"><span className="text-[10px] font-black uppercase text-slate-400 tracking-wider">Class 10-A</span><span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" /></div>
+    <div className="flex items-center justify-between pb-2 border-b border-slate-200/50"><span className="text-[10px] font-black uppercase text-slate-600 tracking-wider">Class 10-A</span><span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" /></div>
     <div className="grid grid-cols-2 gap-2">
       <div className="bg-white border border-slate-100/80 p-2 rounded-xl shadow-sm text-center cursor-pointer hover:bg-slate-50">
-        <div className="text-[8px] text-slate-400 font-black tracking-wider uppercase">ATTENDANCE</div>
+        <div className="text-[8px] text-slate-600 font-black tracking-wider uppercase">ATTENDANCE</div>
         <div className="font-bold text-slate-700 text-[10px] mt-0.5">Mark Roster</div>
       </div>
       <div className="bg-white border border-slate-100/80 p-2 rounded-xl shadow-sm text-center cursor-pointer hover:bg-slate-50">
-        <div className="text-[8px] text-slate-400 font-black tracking-wider uppercase">GRADING</div>
+        <div className="text-[8px] text-slate-600 font-black tracking-wider uppercase">GRADING</div>
         <div className="font-bold text-slate-700 text-[10px] mt-0.5">Upload Marks</div>
       </div>
     </div>
     <div className="bg-white border border-slate-100/80 p-2.5 rounded-xl shadow-sm flex items-center justify-between">
-      <div><div className="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Active Lesson</div><div className="font-bold text-slate-700 mt-0.5">Ch. 4 Laws of Motion</div></div>
+      <div><div className="text-[9px] text-slate-600 font-bold uppercase tracking-wider">Active Lesson</div><div className="font-bold text-slate-700 mt-0.5">Ch. 4 Laws of Motion</div></div>
       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
     </div>
   </div>
@@ -87,13 +87,13 @@ export default function AppsSection() {
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-5 md:mb-5">
-          <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-4 inline-block">
+          <span className="text-xs sm:text-sm font-bold text-primary bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-4 inline-block">
             Dedicated Apps
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-3 md:mb-6">
             One School. <br className="block sm:hidden" /> Three Dedicated Apps.
           </h2>
-          <p className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed mb-6">
+          <p className="text-sm sm:text-base text-slate-600 font-semibold leading-relaxed mb-6">
             We design and build fully customized apps under your school's own name and branding — tailored to your institution's exact requirements.
           </p>
           <div className="inline-flex flex-wrap items-center justify-center gap-1 md:gap-4 text-sm font-bold text-slate-600 uppercase tracking-wider bg-slate-50 border border-slate-200/50 px-6 py-2.5 rounded-full"> 
@@ -166,7 +166,7 @@ export default function AppsSection() {
                   </span>
                   {/* Title & Tagline */}
                   <h3 className="text-3xl font-bold text-slate-800 tracking-tight mb-2.5">{app.name}</h3>
-                  <p className="text-lg md:text-base sm:text-sm font-semibold text-slate-400 px-2 leading-[1.4] mb-6">{app.tagline}</p>
+                  <p className="text-lg md:text-base sm:text-sm font-semibold text-slate-600 px-2 leading-[1.4] mb-6">{app.tagline}</p>
                   {/* Action Button */}
                   <button className="border border-slate-200 hover:border-slate-300 text-lg md:text-base sm:text-sm font-bold px-4 py-2 hover:bg-slate-50 transition-colors rounded-lg mb-8 inline-block select-none">
                     Explore App Specs

@@ -11,17 +11,17 @@ const ERPPlatformMockup = () => (
         <span className="flex items-center gap-1.5 bg-white border border-slate-200 shadow-xs px-3 py-1.5 rounded-lg text-sm font-bold text-slate-800">
           <Building2 className="w-3.5 h-3.5 text-primary" /> Admin Panel
         </span>
-        <span className="flex items-center gap-1.5 bg-slate-100/50 border border-slate-200/40 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-400">
+        <span className="flex items-center gap-1.5 bg-slate-100/50 border border-slate-200/40 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-600">
           Teacher Portal
         </span>
-        <span className="flex items-center gap-1.5 bg-slate-100/50 border border-slate-200/40 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-400">
+        <span className="flex items-center gap-1.5 bg-slate-100/50 border border-slate-200/40 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-600">
           Parent App
         </span>
       </div>
       <div className="space-y-2">
         <div className="text-slate-500 font-bold text-sm">Enter administrative prompt</div>
         <div className="flex gap-2 items-center bg-white border border-slate-200 rounded-lg p-1.5 pl-3">
-          <span className="text-sm text-slate-400 font-semibold truncate flex-1">
+          <span className="text-sm text-slate-600 font-semibold truncate flex-1">
             Review mid-term fee collections ledger for Class 10-A
           </span>
           <span className="flex items-center gap-1 bg-slate-50 px-2 py-1 rounded text-xs font-bold text-slate-800 border border-slate-200">
@@ -38,15 +38,15 @@ const AIAgentsMockup = () => (
     {/* Mobile mockup on left */}
     <div className="w-1/2 bg-white border border-slate-200/80 rounded-lg p-3.5 space-y-3.5 text-xs font-semibold text-slate-500 text-left shrink-0 shadow-sm">
       <div className="flex justify-between items-center pb-1 border-b border-slate-100">
-        <span className="text-[10px] font-black uppercase text-slate-400">Student Profile</span>
+        <span className="text-[10px] font-black uppercase text-slate-600">Student Profile</span>
         <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
       </div>
       <div className="bg-slate-50/80 p-2.5 rounded border border-slate-100">
-        <div className="text-[8px] text-slate-400 font-black">WALLET BALANCE</div>
+        <div className="text-[8px] text-slate-600 font-black">WALLET BALANCE</div>
         <div className="font-extrabold text-slate-700 text-sm mt-0.5">$90.00</div>
       </div>
       <div className="bg-slate-50/80 p-2.5 rounded border border-slate-100">
-        <div className="text-[8px] text-slate-400 font-black">FEE INVOICE</div>
+        <div className="text-[8px] text-slate-600 font-black">FEE INVOICE</div>
         <div className="font-extrabold text-slate-700 text-sm mt-0.5">July Term: Paid</div>
       </div>
     </div>
@@ -70,7 +70,7 @@ const AIAgentsMockup = () => (
         </div>
       </div>
       
-      <div className="bg-white border border-slate-200 rounded p-2 text-[10px] text-slate-400 truncate mt-2 relative">
+      <div className="bg-white border border-slate-200 rounded p-2 text-[10px] text-slate-600 truncate mt-2 relative">
         <span>Type instruction...</span>
         <span className="absolute right-3 top-2.5 w-1 h-3.5 bg-slate-400 animate-blink" />
       </div>
@@ -120,9 +120,9 @@ export default function CoreOfferings() {
         </div>
 
         {/* Two Columns Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {/* Card 1: ERP Platform */}
-          <div className="relative bg-white border border-slate-200/80 rounded-[32px] pt-8 flex flex-col justify-between overflow-hidden shadow-[0_4px_20px_-4px_rgba(15,23,42,0.05)] hover:shadow-[0_20px_40px_-8px_rgba(15,23,42,0.1)] hover:border-primary/20 transition-all duration-300 group min-h-[460px]">
+          <div className="relative bg-white border border-slate-200/80 rounded-[26px] md:rounded-[32px] pt-8 flex flex-col justify-between overflow-hidden shadow-[0_4px_20px_-4px_rgba(15,23,42,0.05)] hover:shadow-[0_20px_40px_-8px_rgba(15,23,42,0.1)] hover:border-primary/20 transition-all duration-300 group min-h-[460px]">
             {/* Top gradient glow overlay */}
             <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-indigo-50/30 via-transparent to-transparent pointer-events-none" />
             
@@ -130,7 +130,7 @@ export default function CoreOfferings() {
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-800 group-hover:text-primary transition-colors">
                 School ERP Platform
               </h3>
-              <p className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 font-semibold leading-relaxed">
                 The unified foundation that connects your academics, administration, and finance workflows — across every department, at any scale.
               </p>
             </div>
@@ -140,7 +140,7 @@ export default function CoreOfferings() {
           </div>
 
           {/* Card 2: AI Agents & Apps */}
-          <div className="relative bg-white border border-slate-200/80 rounded-[32px] pt-8 flex flex-col justify-between overflow-hidden shadow-[0_4px_20px_-4px_rgba(15,23,42,0.05)] hover:shadow-[0_20px_40px_-8px_rgba(15,23,42,0.1)] hover:border-primary/20 transition-all duration-300 group min-h-[460px]">
+          <div className="relative bg-white border border-slate-200/80 rounded-[26px] md:rounded-[32px] pt-8 flex flex-col justify-between overflow-hidden shadow-[0_4px_20px_-4px_rgba(15,23,42,0.05)] hover:shadow-[0_20px_40px_-8px_rgba(15,23,42,0.1)] hover:border-primary/20 transition-all duration-300 group min-h-[460px]">
             {/* Top gradient glow overlay */}
             <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-emerald-50/30 via-transparent to-transparent pointer-events-none" />
 
@@ -148,7 +148,7 @@ export default function CoreOfferings() {
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-800 group-hover:text-primary transition-colors">
                 AI Agents & Apps
               </h3>
-              <p className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 font-semibold leading-relaxed">
                 A suite of custom-branded mobile apps and AI tools that automate parent alerts, teacher workflows, and institutional analytics.
               </p>
             </div>

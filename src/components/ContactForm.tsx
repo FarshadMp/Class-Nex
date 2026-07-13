@@ -52,7 +52,7 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit} className="space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-1.5">
-            <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Your Name</label>
+            <label className="text-xs font-bold text-slate-600 uppercase tracking-wider">Your Name</label>
             <input
               type="text"
               required
@@ -63,7 +63,7 @@ export default function ContactForm() {
             />
           </div>
           <div className="space-y-1.5">
-            <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Email Address</label>
+            <label className="text-xs font-bold text-slate-600 uppercase tracking-wider">Email Address</label>
             <input
               type="email"
               required
@@ -77,7 +77,7 @@ export default function ContactForm() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-1.5">
-            <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">School Name</label>
+            <label className="text-xs font-bold text-slate-600 uppercase tracking-wider">School Name</label>
             <input
               type="text"
               required
@@ -88,7 +88,7 @@ export default function ContactForm() {
             />
           </div>
           <div className="space-y-1.5">
-            <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Phone Number</label>
+            <label className="text-xs font-bold text-slate-600 uppercase tracking-wider">Phone Number</label>
             <input
               type="tel"
               required
@@ -101,7 +101,7 @@ export default function ContactForm() {
         </div>
 
         <div className="space-y-1.5">
-          <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Message or Requirements</label>
+          <label className="text-xs font-bold text-slate-600 uppercase tracking-wider">Message or Requirements</label>
           <textarea
             rows={4}
             value={formData.message}

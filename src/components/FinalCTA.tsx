@@ -28,7 +28,7 @@ export default function FinalCTA() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-[1]">
               Ready to Run Your School on Intelligence?
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-emerald-50/90 font-semibold mb-10 max-w-2xl leading-[1.5]">
+            <p className="text-base md:text-lg text-emerald-50/90 font-semibold mb-10 max-w-2xl leading-[1.5]">
               See how Class Nex brings academics, administration, finance, and communication into a single, AI-powered platform — built around your school's needs.
             </p>
 

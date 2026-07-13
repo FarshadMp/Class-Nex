@@ -32,7 +32,7 @@ export default function AboutValues() {
     <section className="py-16 md:py-20 bg-[#fbfbf9] font-sans">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-4 inline-block">
+          <span className="text-xs sm:text-sm font-bold text-primary bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-4 inline-block">
             Our Core Values
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">

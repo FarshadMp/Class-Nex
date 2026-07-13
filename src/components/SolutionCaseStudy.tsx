@@ -23,8 +23,8 @@ export default function SolutionCaseStudy({ caseStudy }: SolutionCaseStudyProps)
     <section className="py-16 md:py-20 bg-[#fbfbf9] border-t border-slate-200/40 font-sans text-left">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         
-        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-          <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-3 md:mb-4 inline-block">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+          <span className="text-xs sm:text-sm font-bold text-primary bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-3 md:mb-4 inline-block">
             Success Story
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-3 md:mb-6">

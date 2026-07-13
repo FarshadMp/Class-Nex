@@ -24,13 +24,13 @@ export default function WhyClassNex() {
           
           {/* Left Column: Product Value Prop */}
           <div>
-            <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-3 md:mb-4 inline-block">
+            <span className="text-xs sm:text-sm font-bold text-primary bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-3 md:mb-4 inline-block">
               Why Class Nex
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-3 md:mb-6">
               The Future of Smart School Management
             </h2>
-            <div className="space-y-4 md:space-y-6 text-base sm:text-lg text-slate-500 font-semibold leading-relaxed mb-6 md:mb-8">
+            <div className="space-y-4 md:space-y-6 text-sm sm:text-base text-slate-600 font-semibold leading-relaxed mb-6 md:mb-8">
               <p>
                 Class Nex is an international AI-powered School Management Solution designed to transform how educational institutions operate in the digital era. The platform streamlines administration, automates daily processes, enhances communication, and delivers intelligent insights to improve academic and operational performance.
               </p>
@@ -68,7 +68,7 @@ export default function WhyClassNex() {
                     </div>
                     <div>
                       <h4 className="text-base sm:text-lg font-bold text-slate-800 mb-1">{step.title}</h4>
-                      <p className="text-xs sm:text-sm text-slate-400 font-semibold leading-relaxed">{step.description}</p>
+                      <p className="text-xs sm:text-sm text-slate-500 font-semibold leading-relaxed">{step.description}</p>
                     </div>
                   </div>
                 );

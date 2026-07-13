@@ -131,7 +131,7 @@ export default function ModulesExplorer() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="bg-white rounded-[22px] md:rounded-[32px] overflow-hidden flex flex-col lg:flex-row shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-slate-100"
+          className="bg-white rounded-[22px] md:rounded-[26px] md:rounded-[32px] overflow-hidden flex flex-col lg:flex-row shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-slate-100"
         >
           {/* Left Panel (Sidebar) */}
           <div className="lg:w-1/3 p-6 sm:p-10 border-b lg:border-b-0 lg:border-r border-slate-100 flex flex-col justify-between shrink-0 bg-slate-50/50">
@@ -139,7 +139,7 @@ export default function ModulesExplorer() {
               <div className="text-[56px] font-bold text-slate-800 tracking-tighter leading-none mb-3">
                 {activeCategory.stat}
               </div>
-              <div className="text-sm font-black text-slate-400 uppercase tracking-widest leading-normal">
+              <div className="text-base font-bold text-slate-600 leading-normal">
                 {activeCategory.statLabel}
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function ModulesExplorer() {
             <div className="mt-10 lg:mt-0">
               <a 
                 href="#contact" 
-                className="border border-slate-800 hover:bg-slate-900 hover:text-white text-xs font-black uppercase tracking-widest px-6 py-3 rounded-full transition-all inline-flex items-center gap-2 select-none"
+                className="border border-slate-800 hover:bg-slate-900 hover:text-white text-xs font-black px-6 py-3 rounded-full transition-all inline-flex items-center gap-2 select-none"
               >
                 <span>REQUEST DEMO</span>
                 <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-ping" />
@@ -176,7 +176,7 @@ export default function ModulesExplorer() {
                   </div>
                   <div>
                     <h4 className="text-lg sm:text-xl font-bold text-slate-800 mb-1">{mod.name}</h4>
-                    <p className="text-base sm:text-sm text-slate-400 font-semibold leading-[1.4]">
+                    <p className="text-base sm:text-sm text-slate-600 font-semibold leading-[1.4]">
                       {mod.details.join(" • ")}
                     </p>
                   </div>

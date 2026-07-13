@@ -36,7 +36,7 @@ export default function Footer() {
             </p>
             {/* Locations strip */}
             <div className="space-y-2">
-              <span className="text-sm font-black text-neutral-500 uppercase tracking-widest block">Regional Hubs</span>
+              <span className="text-sm font-black text-neutral-500 block">Regional Hubs</span>
               <div className="flex flex-wrap gap-2 text-sm font-bold text-neutral-300">
                 <span className="flex items-center gap-1 bg-neutral-900 border border-neutral-800/60 px-2.5 py-1 rounded-full"><MapPin className="w-3 h-3 text-primary" /> Saudi Arabia</span>
                 <span className="flex items-center gap-1 bg-neutral-900 border border-neutral-800/60 px-2.5 py-1 rounded-full"><MapPin className="w-3 h-3 text-primary" /> India</span>
@@ -48,7 +48,7 @@ export default function Footer() {
 
           {/* Contact Details */}
           <div className="md:col-span-4 space-y-6">
-            <h3 className="text-base font-black text-neutral-500 uppercase tracking-widest">Get In Touch</h3>
+            <h3 className="text-sm font-bold text-neutral-500">Get In Touch</h3>
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-base font-bold text-neutral-300">
                 <div className="w-8 h-8 rounded-lg bg-neutral-900 flex items-center justify-center text-primary shrink-0 border border-neutral-800/60">
@@ -73,7 +73,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="md:col-span-3 space-y-6">
-            <h3 className="text-base font-black text-neutral-500 uppercase tracking-widest">Quick Navigation</h3>
+            <h3 className="text-sm font-bold text-neutral-500">Quick Navigation</h3>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-2.5 text-base font-bold text-neutral-400">
               <li><Link href="#platform" className="hover:text-primary transition-colors">Platform</Link></li>
               <li><Link href="#solutions" className="hover:text-primary transition-colors">Solutions</Link></li>
@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom copyright & legal */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm font-bold text-neutral-500 uppercase tracking-wider">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm font-bold text-neutral-500">
           <span>&copy; {new Date().getFullYear()} Class Nex. All rights reserved.</span>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>

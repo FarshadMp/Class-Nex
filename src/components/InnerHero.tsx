@@ -38,7 +38,7 @@ export default function InnerHero({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-50 border border-emerald-100 rounded-full text-xs sm:text-sm font-bold text-primary uppercase tracking-widest">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-50 border border-emerald-100 rounded-full text-xs sm:text-sm font-bold text-primary">
                 <Sparkles className="w-3.5 h-3.5 animate-pulse" /> {badge}
               </span>
             </motion.div>
@@ -56,7 +56,7 @@ export default function InnerHero({
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed max-w-2xl"
+              className="text-sm sm:text-base text-slate-600 font-semibold leading-relaxed max-w-2xl"
             >
               {description}
             </motion.p>
@@ -70,7 +70,7 @@ export default function InnerHero({
               >
                 <Link
                   href={ctaLink}
-                  className="inline-block px-5 py-2.5 bg-primary hover:bg-primary-hover text-white rounded-full text-sm sm:text-base font-bold transition-all uppercase shadow-md shadow-primary/10 cursor-pointer"
+                  className="inline-block px-5 py-2.5 bg-primary hover:bg-primary-hover text-white rounded-full text-sm sm:text-base font-bold transition-all cursor-pointer"
                 >
                   {ctaText}
                 </Link>

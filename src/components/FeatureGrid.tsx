@@ -24,7 +24,7 @@ export default function FeatureGrid({ description, benefits, subFeatures }: Feat
             <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-tight">
               Why Schools Choose This Module
             </h3>
-            <p className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed">
+            <p className="text-sm sm:text-base text-slate-600 font-semibold leading-relaxed">
               {description}
             </p>
             
@@ -53,7 +53,7 @@ export default function FeatureGrid({ description, benefits, subFeatures }: Feat
               >
                 <div className="space-y-2">
                   <h4 className="text-base sm:text-lg font-bold text-slate-800 flex items-center gap-1.5 group-hover:text-primary transition-colors">
-                    <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-primary transition-colors" /> {sub.title}
+                    <ArrowRight className="w-4 h-4 text-slate-600 group-hover:text-primary transition-colors" /> {sub.title}
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-500 font-semibold leading-relaxed">
                     {sub.description}

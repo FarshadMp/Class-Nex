@@ -44,13 +44,13 @@ export default function AppsTimeline() {
       
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-4 inline-block">
+          <span className="text-xs sm:text-sm font-bold text-primary bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-4 inline-block">
             Launch Timeline
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight leading-tight">
             How We Launch Your Dedicated Apps
           </h2>
-          <p className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed mt-3">
+          <p className="text-sm sm:text-base text-slate-600 font-semibold leading-relaxed mt-3">
             From the initial asset compilation to the final App Store publishing, we handle the technical heavy lifting at every step.
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function AppsTimeline() {
             return (
               <div key={idx} className="relative pl-8 md:pl-12 group">
                 {/* Connector Dot */}
-                <div className="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full border-4 border-slate-50 bg-white group-hover:border-primary/20 shadow-sm flex items-center justify-center text-slate-400 group-hover:text-primary transition-all duration-300">
+                <div className="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full border-4 border-slate-50 bg-white group-hover:border-primary/20 shadow-sm flex items-center justify-center text-slate-600 group-hover:text-primary transition-all duration-300">
                   <div className="w-2.5 h-2.5 rounded-full bg-slate-350 group-hover:bg-primary transition-colors" />
                 </div>
 

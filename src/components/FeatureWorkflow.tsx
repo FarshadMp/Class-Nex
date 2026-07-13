@@ -19,8 +19,8 @@ export default function FeatureWorkflow({ workflow }: FeatureWorkflowProps) {
   return (
     <section className="py-16 md:py-20 bg-white border-t border-slate-200/40 font-sans text-left">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
-        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-          <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-3 md:mb-4 inline-block">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+          <span className="text-xs sm:text-sm font-bold text-primary bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-3 md:mb-4 inline-block">
             Workflow Process
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-3 md:mb-6">
@@ -52,7 +52,7 @@ export default function FeatureWorkflow({ workflow }: FeatureWorkflowProps) {
                 <h4 className="text-xl sm:text-2xl font-bold text-slate-800 tracking-tight group-hover:text-primary transition-colors mb-1">
                   {item.title}
                 </h4>
-                <p className="text-xs sm:text-sm text-slate-400 font-semibold leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-500 font-semibold leading-relaxed">
                   {item.description}
                 </p>
               </div>

@@ -40,7 +40,7 @@ export default function Navbar() {
 
           {/* Desktop Nav Links */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Link href="/" className="text-lg font-bold text-slate-700 hover:text-primary transition-colors">
+            <Link href="/" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
               Home
             </Link>
 
@@ -50,7 +50,7 @@ export default function Navbar() {
               onMouseEnter={() => setActiveDropdown("platform")}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className="flex items-center gap-1 text-lg font-bold text-slate-700 hover:text-primary transition-colors cursor-pointer py-2">
+              <button className="flex items-center gap-1 text-base font-bold text-slate-700 hover:text-primary transition-colors cursor-pointer py-2">
                 <span>Platform</span>
                 <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === "platform" ? "rotate-180" : ""}`} />
               </button>
@@ -78,7 +78,7 @@ export default function Navbar() {
               onMouseEnter={() => setActiveDropdown("solutions")}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className="flex items-center gap-1 text-lg font-bold text-slate-700 hover:text-primary transition-colors cursor-pointer py-2">
+              <button className="flex items-center gap-1 text-base font-bold text-slate-700 hover:text-primary transition-colors cursor-pointer py-2">
                 <span>Solutions</span>
                 <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === "solutions" ? "rotate-180" : ""}`} />
               </button>
@@ -100,13 +100,13 @@ export default function Navbar() {
               </AnimatePresence>
             </div>
 
-            <Link href="/apps" className="text-lg font-bold text-slate-700 hover:text-primary transition-colors">
+            <Link href="/apps" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
               Apps
             </Link>
-            <Link href="/about" className="text-lg font-bold text-slate-700 hover:text-primary transition-colors">
+            <Link href="/about" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
               About Us
             </Link>
-            <Link href="/contact" className="text-lg font-bold text-slate-700 hover:text-primary transition-colors">
+            <Link href="/contact" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
               Contact
             </Link>
           </nav>
@@ -115,13 +115,13 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <Link
               href="/contact"
-              className="px-5 py-2.5 border border-primary text-primary hover:bg-primary/5 rounded-full text-sm sm:text-base font-bold transition-all uppercase"
+              className="px-5 py-2.5 border border-primary text-primary hover:bg-primary/5 rounded-full text-sm sm:text-sm font-bold transition-all uppercase"
             >
               Contact Us
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary-hover text-white rounded-full text-sm sm:text-base font-bold shadow-md shadow-primary/10 hover:shadow-lg transition-all uppercase group"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary-hover text-white rounded-full text-sm sm:text-sm font-bold shadow-md shadow-primary/10 hover:shadow-lg transition-all uppercase group"
             >
               <span>Book a Demo</span>
               <span className="flex items-center justify-center w-5 h-5 bg-white text-primary rounded-full transition-transform group-hover:translate-x-0.5">
@@ -164,7 +164,7 @@ export default function Navbar() {
                 ))}
               </div>
 
-              <div className="px-3 py-2 text-base font-bold text-slate-400">Solutions:</div>
+              <div className="px-3 py-2 text-base font-bold text-slate-600">Solutions:</div>
               <div className="grid gap-1 pl-4">
                 {solutionsLinks.map(link => (
                   <Link key={link.name} href={link.href} onClick={() => setIsOpen(false)} className="py-1 text-base font-semibold text-slate-600 hover:text-primary">{link.name}</Link>

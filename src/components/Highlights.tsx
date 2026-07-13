@@ -85,7 +85,7 @@ export default function Highlights() {
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         {/* Header */}
         <div className="max-w-3xl mb-10 md:mb-16">
-          <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-2 inline-block">
+          <span className="text-xs sm:text-sm font-bold text-primary bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full mb-2 inline-block">
             Key Highlights
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-4">
@@ -97,7 +97,7 @@ export default function Highlights() {
         </div>
 
         {/* Highlights Grid with shared border style */}
-        <div className="border border-slate-200/60 rounded-[32px] overflow-hidden bg-slate-200/50 gap-[1px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="border border-slate-200/60 rounded-[26px] md:rounded-[32px] overflow-hidden bg-slate-200/50 gap-[1px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {highlights.map((item, i) => {
             const Icon = item.icon;
             return (
@@ -120,15 +120,15 @@ export default function Highlights() {
                   </h3>
                   
                   {/* Description */}
-                  <p className="text-base sm:text-lg text-slate-400 font-semibold leading-[1.4] mb-6">
+                  <p className="text-base sm:text-base text-slate-600 font-medium leading-[1.6] mb-6">
                     {item.description}
                   </p>
                 </div>
 
                 {/* Bottom Action Area */}
                 <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-50">
-                  <div className="flex items-center gap-2 text-sm font-bold text-slate-400">
-                    <FileText className="w-4 h-4 text-slate-400" />
+                  <div className="flex items-center gap-2 text-sm font-bold text-slate-600">
+                    <FileText className="w-4 h-4 text-slate-600" />
                     <span>{item.tag}</span>
                   </div>
                   <div className="w-8 h-8 rounded-full bg-emerald-50 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-xs">

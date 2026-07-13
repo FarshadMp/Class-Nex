@@ -9,7 +9,7 @@ export default function PlatformPlatform() {
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[45px] font-bold text-slate-900 tracking-tight leading-[1]">
             Powered by the ClassNex Platform
           </h2>
@@ -19,9 +19,9 @@ export default function PlatformPlatform() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5 w-full">
           
           {/* Card 1: AI Chat Assistant */}
-          <div className="relative bg-white border border-slate-200/50 rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:border-primary/20 transition-all duration-300 group min-h-[540px]">
+          <div className="relative bg-white border border-slate-200/50 rounded-[26px] md:rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:border-primary/20 transition-all duration-300 group min-h-[540px]">
             <div className="space-y-4">
-              <span className="text-sm font-bold uppercase tracking-wider text-slate-400 block">AI Co-Pilot</span>
+              <span className="text-sm font-bold text-slate-600 block">AI Co-Pilot</span>
               <h3 className="text-2xl font-bold text-slate-800 leading-[1]">
                 Ask. Analyze.<br />Act.
               </h3>
@@ -39,22 +39,22 @@ export default function PlatformPlatform() {
                   <span>Send</span>
                 </div>
 
-                <div className="absolute left-4 bottom-6 bg-white border border-slate-200 rounded-lg px-2 py-1 shadow-xs text-[9px] font-bold text-slate-400 flex items-center gap-1">
+                <div className="absolute left-4 bottom-6 bg-white border border-slate-200 rounded-lg px-2 py-1 shadow-xs text-[9px] font-bold text-slate-600 flex items-center gap-1">
                   <Sparkles className="w-2.5 h-2.5 text-primary" />
                   <span>AI Agent</span>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 text-base font-semibold text-slate-500 leading-[1.4]">
+            <div className="mt-6 text-sm font-semibold text-slate-700 leading-[1.6]">
               Interact with your entire school database using natural language. Query attendance, draft report card feedback, and dispatch warnings instantly.
             </div>
           </div>
 
           {/* Card 2: Unified Modules */}
-          <div className="relative bg-slate-100/80 border border-slate-200/40 rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:border-primary/20 transition-all duration-300 group min-h-[540px]">
+          <div className="relative bg-slate-100/80 border border-slate-200/40 rounded-[26px] md:rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:border-primary/20 transition-all duration-300 group min-h-[540px]">
             <div className="space-y-4">
-              <span className="text-sm font-bold uppercase tracking-wider text-slate-500 block">Unified Infrastructure</span>
+              <span className="text-sm font-bold text-slate-500 block">Unified Infrastructure</span>
               <h3 className="text-2xl font-bold text-slate-800 leading-[1]">
                 Connect Your School<br />Workflows.
               </h3>
@@ -71,15 +71,15 @@ export default function PlatformPlatform() {
               </div>
             </div>
 
-            <div className="mt-6 text-base font-semibold text-slate-500 leading-[1.4]">
+            <div className="mt-6 text-sm font-semibold text-slate-700 leading-[1.6]">
               Consolidate academic, administrative, and financial processes with zero-setup components. Scalable architecture built to handle multi-hub school campuses.
             </div>
           </div>
 
           {/* Card 3: Integrations */}
-          <div className="relative bg-emerald-50/70 border border-emerald-100/40 rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:border-primary/20 transition-all duration-300 group min-h-[540px]">
+          <div className="relative bg-emerald-50/70 border border-emerald-100/40 rounded-[26px] md:rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:border-primary/20 transition-all duration-300 group min-h-[540px]">
             <div className="space-y-4">
-              <span className="text-sm font-bold uppercase tracking-wider text-emerald-600 block">Integrations</span>
+              <span className="text-sm font-bold text-emerald-600 block">Integrations</span>
               <h3 className="text-2xl font-bold text-slate-800 leading-[1]">
                 Connect to Local &amp;<br />Global APIs.
               </h3>
@@ -115,15 +115,15 @@ export default function PlatformPlatform() {
               </div>
             </div>
 
-            <div className="mt-6 text-base font-semibold text-slate-500 leading-[1.4]">
+            <div className="mt-6 text-sm font-semibold text-slate-700 leading-[1.6]">
               Extend platform capabilities with secure communication nodes. Seamlessly connect with regional payment hubs, WhatsApp notifications, and local education APIs.
             </div>
           </div>
 
           {/* Card 4: Enterprise Control / Security */}
-          <div className="relative bg-primary border border-primary/20 rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 group min-h-[540px] text-white">
+          <div className="relative bg-primary border border-primary/20 rounded-[26px] md:rounded-[32px] p-8 flex flex-col justify-between shadow-xs hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 group min-h-[540px] text-white">
             <div className="space-y-4">
-              <span className="text-sm font-bold uppercase tracking-wider text-emerald-200 block">Security &amp; Privacy</span>
+              <span className="text-sm font-bold text-emerald-200 block">Security &amp; Privacy</span>
               <h3 className="text-2xl font-bold text-white leading-[1]">
                 Secure Your Records<br />As You Scale.
               </h3>
@@ -139,7 +139,7 @@ export default function PlatformPlatform() {
               </div>
             </div>
 
-            <div className="mt-6 text-base font-semibold text-emerald-100/90 leading-[1.4]">
+            <div className="mt-6 text-sm font-semibold text-emerald-100/90 leading-[1.6]">
               Data sovereignty and defense at every layer. Features SSO/SAML integrations, role-based controls, comprehensive data masking, and automated secure backups.
             </div>
           </div>

@@ -22,13 +22,13 @@ export default function ContactInfo() {
   return (
     <div className="space-y-6 text-left">
       <div className="space-y-3">
-        <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full inline-block">
+        <span className="text-xs sm:text-sm font-bold text-primary bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full inline-block">
           Get in Touch
         </span>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
           Let&apos;s Start a Conversation
         </h2>
-        <p className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed">
+        <p className="text-sm sm:text-base text-slate-600 font-semibold leading-relaxed">
           Have questions about pricing plans, module customization, or security configurations? Drop us a note or call our regional desks directly.
         </p>
       </div>
@@ -45,11 +45,11 @@ export default function ContactInfo() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 text-sm font-bold text-slate-700">
               <span className="flex items-center gap-1.5">
-                <Phone className="w-4 h-4 text-slate-400" /> {office.phone}
+                <Phone className="w-4 h-4 text-slate-600" /> {office.phone}
               </span>
               <span className="hidden sm:inline text-slate-350">|</span>
               <span className="flex items-center gap-1.5">
-                <Mail className="w-4 h-4 text-slate-400" /> {office.email}
+                <Mail className="w-4 h-4 text-slate-600" /> {office.email}
               </span>
             </div>
           </div>

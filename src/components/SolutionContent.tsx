@@ -31,7 +31,7 @@ export default function SolutionContent({ targetAudience, challenges, features }
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest">
+              <h4 className="text-sm font-bold text-slate-600">
                 Common Operational Pain Points
               </h4>
               <ul className="space-y-1 md:space-y-3">

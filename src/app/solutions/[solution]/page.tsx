@@ -39,7 +39,7 @@ export default async function SolutionDetailPage({ params }: PageProps) {
           <Calendar className="w-6 h-6" />
         </div>
         <div>
-          <div className="text-xs font-bold uppercase text-slate-400">BENEFIT METRIC</div>
+          <div className="text-xs font-bold uppercase text-slate-600">BENEFIT METRIC</div>
           <div className="text-lg font-bold text-slate-800">Target Value</div>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Darker_Grotesque, Noto_Kufi_Arabic, Inter } from "next/font/google";
+import { Fustat, Noto_Kufi_Arabic, Inter } from "next/font/google";
 import "./globals.css";
 
-const darkerGrotesque = Darker_Grotesque({
-  variable: "--font-darker-grotesque",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+const fustat = Fustat({
+  variable: "--font-fustat",
+  subsets: ["latin", "arabic"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
 });
 
 const notoKufiArabic = Noto_Kufi_Arabic({
@@ -62,7 +62,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${darkerGrotesque.variable} ${notoKufiArabic.variable} ${inter.variable} antialiased font-sans bg-[#fbfbf9] text-slate-900`}
+        className={`${fustat.variable} ${notoKufiArabic.variable} ${inter.variable} antialiased font-sans bg-[#fbfbf9] text-slate-900`}
       >
         {children}
       </body>

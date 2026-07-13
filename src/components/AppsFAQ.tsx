@@ -18,7 +18,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
         className="w-full p-5 flex items-center justify-between text-left font-bold text-slate-800 hover:text-primary transition-colors cursor-pointer select-none gap-4"
       >
         <span className="text-base md:text-lg">{question}</span>
-        <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform duration-300 ${isOpen ? "rotate-180 text-primary" : ""}`} />
+        <ChevronDown className={`w-5 h-5 text-slate-600 transition-transform duration-300 ${isOpen ? "rotate-180 text-primary" : ""}`} />
       </button>
       <div
         className={`transition-all duration-300 overflow-hidden ${
@@ -61,7 +61,7 @@ export default function AppsFAQ() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start max-w-5xl mx-auto">
           {/* Header info */}
           <div className="lg:col-span-4 space-y-4">
-            <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full inline-block">
+            <span className="text-xs sm:text-sm font-bold text-primary bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full inline-block">
               App Store FAQ
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight leading-tight">

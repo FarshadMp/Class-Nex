@@ -53,7 +53,7 @@ export default function Overview() {
             <div className={`p-2 rounded-lg border ${card.color} shrink-0`}>
               <Icon className="w-4 h-4" />
             </div>
-            <span className="text-[11px] font-extrabold text-slate-400 uppercase tracking-widest">
+            <span className="text-[11px] font-extrabold text-slate-600">
               {card.label}
             </span>
           </div>
@@ -70,7 +70,7 @@ export default function Overview() {
         </div>
 
         {card.extra && (
-          <div className="mt-auto pt-2.5 border-t border-slate-50 text-[11px] font-bold text-slate-400">
+          <div className="mt-auto pt-2.5 border-t border-slate-50 text-[11px] font-bold text-slate-600">
             <span>{card.extra}</span>
           </div>
         )}
@@ -82,14 +82,14 @@ export default function Overview() {
     <section id="platform" className="w-full py-16 md:py-20 bg-slate-50/50 border-y border-slate-200/40 font-sans overflow-hidden">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-          <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100/80 px-3 py-1.5 rounded-full mb-4 inline-block">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+          <span className="text-xs sm:text-sm font-bold text-primary bg-emerald-50 border border-emerald-100/80 px-3 py-1.5 rounded-full mb-4 inline-block">
             Operational Overview
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-3 md:mb-6">
             One Platform, <br className="block sm:hidden" /> Every Operational Area
           </h2>
-          <p className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed">
+          <p className="text-sm sm:text-base text-slate-600 font-semibold leading-relaxed">
             It's an all-in-one school management tool that lets authorized users access and manage everything happening across an institution.
           </p>
         </div>
@@ -116,27 +116,44 @@ export default function Overview() {
 
           {/* Brackets and central text */}
           <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
-            <div className="relative p-10 max-w-xl text-left pointer-events-auto bg-white/40 backdrop-blur-[2px] rounded-3xl">
+            <div className="relative p-10 max-w-xl w-full text-left pointer-events-auto bg-white/45 backdrop-blur-[4px] rounded-3xl">
               {/* Corner Brackets */}
               <div className="absolute -top-3 -left-3 w-6 h-6 border-t-4 border-l-4 border-primary" />
               <div className="absolute -top-3 -right-3 w-6 h-6 border-t-4 border-r-4 border-primary" />
               <div className="absolute -bottom-3 -left-3 w-6 h-6 border-b-4 border-l-4 border-primary" />
               <div className="absolute -bottom-3 -right-3 w-6 h-6 border-b-4 border-r-4 border-primary" />
 
-              <div className="space-y-6">
-                <p className="text-lg font-bold text-slate-800 tracking-tight leading-relaxed">
-                  Data exists everywhere in your school.<br />
-                  Most of it stays locked in departmental silos.
-                </p>
-                <p className="text-lg font-bold text-slate-800 tracking-tight leading-relaxed">
-                  Operational updates wait on the manual communication of staff.
-                </p>
-                <p className="text-lg font-bold text-slate-800 tracking-tight leading-relaxed">
-                  Administrators struggle to keep track of fees, library books, and attendance in real time.
-                </p>
-                <p className="text-lg font-bold text-slate-800 tracking-tight leading-relaxed">
-                  ClassNex unifies every area. Connecting all workflows under one intelligent system.
-                </p>
+              <div className="h-[220px] overflow-hidden relative [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] [-webkit-mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)]">
+                <div className="animate-vertical-marquee space-y-6">
+                  <p className="text-lg font-bold text-slate-800 tracking-tight leading-relaxed">
+                    Data exists everywhere in your school.<br />
+                    Most of it stays locked in departmental silos.
+                  </p>
+                  <p className="text-lg font-bold text-slate-800 tracking-tight leading-relaxed">
+                    Operational updates wait on the manual communication of staff.
+                  </p>
+                  <p className="text-lg font-bold text-slate-800 tracking-tight leading-relaxed">
+                    Administrators struggle to keep track of fees, library books, and attendance in real time.
+                  </p>
+                  <p className="text-lg font-bold text-slate-800 tracking-tight leading-relaxed">
+                    ClassNex unifies every area. Connecting all workflows under one intelligent system.
+                  </p>
+                  
+                  {/* Duplicated list for seamless looping */}
+                  <p className="text-lg font-bold text-slate-800 tracking-tight leading-relaxed" aria-hidden="true">
+                    Data exists everywhere in your school.<br />
+                    Most of it stays locked in departmental silos.
+                  </p>
+                  <p className="text-lg font-bold text-slate-800 tracking-tight leading-relaxed" aria-hidden="true">
+                    Operational updates wait on the manual communication of staff.
+                  </p>
+                  <p className="text-lg font-bold text-slate-800 tracking-tight leading-relaxed" aria-hidden="true">
+                    Administrators struggle to keep track of fees, library books, and attendance in real time.
+                  </p>
+                  <p className="text-lg font-bold text-slate-800 tracking-tight leading-relaxed" aria-hidden="true">
+                    ClassNex unifies every area. Connecting all workflows under one intelligent system.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

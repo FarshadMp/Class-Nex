@@ -16,10 +16,10 @@ import {
 const floatingIcons = [
   { icon: GraduationCap, className: "top-[22%] left-[6%] text-primary", delay: 0, duration: 4 },
   { icon: BookOpen, className: "top-[48%] left-[10%] text-emerald-500", delay: 1, duration: 5 },
-  { icon: Pencil, className: "top-[70%] left-[5%] text-slate-400 rotate-12", delay: 2, duration: 4.5 },
+  { icon: Pencil, className: "top-[70%] left-[5%] text-slate-600 rotate-12", delay: 2, duration: 4.5 },
   { icon: Award, className: "top-[25%] right-[6%] text-emerald-600", delay: 0.5, duration: 4.8 },
   { icon: Calculator, className: "top-[45%] right-[10%] text-primary", delay: 1.5, duration: 5.2 },
-  { icon: Bell, className: "top-[68%] right-[5%] text-slate-400 -rotate-12", delay: 2.5, duration: 4.2 },
+  { icon: Bell, className: "top-[68%] right-[5%] text-slate-600 -rotate-12", delay: 2.5, duration: 4.2 },
 ];
 
 const stats = [
@@ -67,7 +67,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-slate-50 border border-slate-200/80 text-xs sm:text-sm font-bold text-slate-700 mb-4 uppercase tracking-wider"
+          className="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-slate-50 border border-slate-200/80 text-xs sm:text-sm font-bold text-slate-700 mb-4"
         >
           🚀 Next-Generation School Management System
         </motion.div>
@@ -77,7 +77,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
-          className="text-4xl sm:text-5xl lg:text-7xl font-bold text-slate-900 leading-[1.05] max-w-4xl mb-6 tracking-tight"
+          className="text-4xl sm:text-5xl lg:text-7xl font-semibold text-slate-900 leading-[1.05] max-w-4xl mb-6 tracking-tight"
         >
           Run Your School on{" "}
           <span className="bg-gradient-to-r from-primary via-emerald-500 to-emerald-700 bg-clip-text text-transparent">
@@ -90,19 +90,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="text-sm md:text-xl text-slate-500 font-medium leading-[1.4] max-w-3xl mb-4 font-inter"
+          className="text-sm md:text-lg text-slate-500 font-medium leading-[1.4] max-w-3xl mb-8 font-inter"
         >
           Class Nex is an AI-powered, all-in-one School Management System that unifies academics, administration, finance, and communication — so your team can focus less on paperwork and more on education.
-        </motion.p>
-
-        {/* Supporting Line */}
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.45 }}
-          className="text-xs sm:text-sm text-slate-400 font-bold uppercase mb-8 md:mb-10 font-sans"
-        >
-          Where technology meets education. Simplify operations. Amplify excellence.
         </motion.p>
 
         {/* CTAs */}
@@ -114,7 +104,7 @@ export default function Hero() {
         >
           <Link
             href="#contact"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-primary hover:bg-primary-hover text-base font-bold text-white shadow-lg shadow-primary/20 transition-all uppercase cursor-pointer group"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-primary hover:bg-primary-hover text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all uppercase cursor-pointer group"
           >
             <span>Book a demo</span>
             <span className="flex items-center justify-center w-6 h-6 bg-white text-primary rounded-full transition-transform group-hover:translate-x-0.5">
@@ -124,7 +114,7 @@ export default function Hero() {
 
           <Link
             href="#platform"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white border border-slate-200 hover:bg-slate-50 text-base font-bold text-slate-700 transition-all uppercase cursor-pointer group"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white border border-slate-200 hover:bg-slate-50 text-sm font-bold text-slate-700 transition-all uppercase cursor-pointer group"
           >
             <span>Explore the Platform</span>
             <span className="flex items-center justify-center w-6 h-6 bg-slate-100 text-slate-500 rounded-full transition-transform group-hover:translate-x-0.5">
@@ -138,7 +128,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.75 }}
-          className="w-full max-w-5xl bg-gradient-to-b from-white to-slate-50/65 border border-slate-200/80 border-b-8 border-b-slate-350/55 rounded-[32px] p-6 sm:p-8 shadow-[0_15px_30px_-5px_rgba(0,0,0,0.05),_0_10px_15px_-5px_rgba(5,150,105,0.02)] hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1),_0_15px_30px_-10px_rgba(5,150,105,0.08)] hover:-translate-y-2 transition-all duration-300 mb-16 relative overflow-hidden text-left"
+          className="w-full max-w-5xl bg-gradient-to-b from-white to-slate-50/65 border border-slate-200/80 border-b-8 border-b-slate-350/55 rounded-[26px] md:rounded-[32px] p-6 sm:p-8 shadow-[0_15px_30px_-5px_rgba(0,0,0,0.05),_0_10px_15px_-5px_rgba(5,150,105,0.02)] hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1),_0_15px_30px_-10px_rgba(5,150,105,0.08)] hover:-translate-y-2 transition-all duration-300 mb-16 relative overflow-hidden text-left"
         >
           {/* Background decorative glow inside card */}
           <div className="absolute -right-24 -bottom-24 w-48 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
@@ -153,7 +143,7 @@ export default function Hero() {
                 <span className="text-4xl lg:text-5xl font-black bg-gradient-to-r from-primary to-emerald-600 bg-clip-text text-transparent mb-2 tracking-tight drop-shadow-[0_3px_5px_rgba(5,150,105,0.15)]">
                   {stat.value}
                 </span>
-                <span className="text-[10px] sm:text-xs font-bold text-slate-500 uppercase leading-snug max-w-[180px]">
+                <span className="text-xs sm:text-sm font-semibold text-slate-500 leading-snug max-w-[180px]">
                   {stat.label}
                 </span>
               </div>

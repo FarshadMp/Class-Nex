@@ -25,13 +25,13 @@ export default function FeatureFAQ({ faqs }: FeatureFAQProps) {
           
           {/* Header left column */}
           <div className="lg:col-span-5 space-y-3">
-            <span className="text-xs sm:text-sm font-bold text-primary uppercase tracking-widest bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full inline-block">
+            <span className="text-xs sm:text-sm font-bold text-primary bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full inline-block">
               Frequently Asked Questions
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-[1] mb-3 md:mb-6">
               Have Questions About This Module?
             </h2>
-            <p className="text-base sm:text-lg text-slate-500 font-semibold leading-relaxed">
+            <p className="text-sm sm:text-base text-slate-600 font-semibold leading-relaxed">
               Explore answers to common administrative, setup, and integration queries regarding this system module.
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function FeatureFAQ({ faqs }: FeatureFAQProps) {
                     className="w-full flex items-center justify-between p-3 md:p-5 text-left font-bold text-slate-805 text-base sm:text-lg cursor-pointer select-none outline-none focus:text-primary transition-colors"
                   >
                     <span>{faq.question}</span>
-                    <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform duration-300 shrink-0 ml-4 ${isOpen ? "rotate-180 text-primary" : ""}`} />
+                    <ChevronDown className={`w-5 h-5 text-slate-600 transition-transform duration-300 shrink-0 ml-4 ${isOpen ? "rotate-180 text-primary" : ""}`} />
                   </button>
 
                   <AnimatePresence initial={false}>
@@ -62,7 +62,7 @@ export default function FeatureFAQ({ faqs }: FeatureFAQProps) {
                         transition={{ duration: 0.25, ease: "easeInOut" }}
                         className="overflow-hidden"
                       >
-                        <div className="px-5 pb-5 pt-1 text-base font-semibold text-slate-400 border-t border-slate-50 leading-relaxed">
+                        <div className="px-5 pb-5 pt-1 text-base font-semibold text-slate-600 border-t border-slate-50 leading-relaxed">
                           {faq.answer}
                         </div>
                       </motion.div>

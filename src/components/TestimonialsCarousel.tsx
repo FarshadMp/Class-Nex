@@ -51,17 +51,17 @@ export default function TestimonialsCarousel() {
           {/* Left Column: Title card & Current Reviewer Image */}
           <div className="lg:col-span-3 flex flex-col gap-6">
             {/* Title Card */}
-            <div className="bg-[#f0ede6]/40 border border-slate-200/50 rounded-[16px] md:rounded-[32px] p-4 md:p-8 flex flex-col justify-center min-h-auto py-6 sm:py-8 shadow-xs">
+            <div className="bg-[#f0ede6]/40 border border-slate-200/50 rounded-[16px] md:rounded-[26px] md:rounded-[32px] p-4 md:p-8 flex flex-col justify-center min-h-auto py-6 sm:py-8 shadow-xs">
               <h4 className="text-2xl font-bold text-slate-800 tracking-tight leading-[1] mb-2">
                 Trusted by leaders
               </h4>
-              <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+              <p className="text-xs font-bold text-slate-600 uppercase tracking-wider">
                 Endorsed by educators
               </p>
             </div>
             
             {/* Current Reviewer Profile Image */}
-            <div className="relative h-56 sm:h-72 w-full rounded-[22px] md:rounded-[32px] overflow-hidden shadow-md">
+            <div className="relative h-56 sm:h-72 w-full rounded-[22px] md:rounded-[26px] md:rounded-[32px] overflow-hidden shadow-md">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={current.image}
@@ -79,7 +79,7 @@ export default function TestimonialsCarousel() {
 
           {/* Center Column: The Large Review Testimonial Card */}
           <div className="lg:col-span-5">
-            <div className="bg-white border border-slate-200/50 rounded-[22px] md:rounded-[32px] p-6 md:p-10 shadow-sm min-h-auto md:min-h-[460px] flex flex-col justify-between relative overflow-hidden group hover:border-primary/10 transition-all duration-300">
+            <div className="bg-white border border-slate-200/50 rounded-[22px] md:rounded-[26px] md:rounded-[32px] p-6 md:p-10 shadow-sm min-h-auto md:min-h-[460px] flex flex-col justify-between relative overflow-hidden group hover:border-primary/10 transition-all duration-300">
               <div className="space-y-6">
                 <Quote className="w-10 h-10 text-primary/20 rotate-180" />
                 
@@ -109,7 +109,7 @@ export default function TestimonialsCarousel() {
                     transition={{ duration: 0.2 }}
                   >
                     <h5 className="text-base font-bold text-slate-800">{current.name}</h5>
-                    <p className="text-xs font-bold text-slate-400 mt-1 uppercase tracking-wider">
+                    <p className="text-xs font-bold text-slate-600 mt-1 uppercase tracking-wider">
                       {current.role} &bull; <span className="text-primary">{current.school}</span>
                     </p>
                   </motion.div>
@@ -128,7 +128,7 @@ export default function TestimonialsCarousel() {
               onClick={nextTestimonial}
               className="bg-primary text-white p-4 sm:p-6 rounded-tr-[32px] rounded-tl-[32px] rounded-br-[32px] rounded-bl-[4px] flex flex-col justify-between items-start text-left shadow-md hover:bg-[#047857] transition-all duration-300 cursor-pointer min-h-[130px] sm:min-h-[180px] group"
             >
-              <span className="text-sm font-black uppercase tracking-wider opacity-95">Next Testimonial</span>
+              <span className="text-sm font-bold opacity-95">Next Testimonial</span>
               <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
 
@@ -138,11 +138,11 @@ export default function TestimonialsCarousel() {
               className="bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-100/50 text-primary p-4 sm:p-6 rounded-bl-[32px] rounded-tl-[32px] rounded-br-[4px] rounded-tr-[32px] flex flex-col justify-between items-start text-left transition-all duration-300 cursor-pointer min-h-[130px] sm:min-h-[180px] group"
             >
               <ArrowLeft className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-1" />
-              <span className="text-sm font-black uppercase tracking-wider">Previous Testimonial</span>
+              <span className="text-sm font-bold">Previous Testimonial</span>
             </button>
 
             {/* Bottom-Right: Next Reviewer Profile Image */}
-            <div className="relative rounded-[32px] rounded-tr-[4px] overflow-hidden shadow-md min-h-[130px] sm:min-h-[180px]">
+            <div className="relative rounded-[26px] md:rounded-[32px] rounded-tr-[4px] overflow-hidden shadow-md min-h-[130px] sm:min-h-[180px]">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={nextClient.image}
