@@ -44,7 +44,7 @@ export default function SolutionCaseStudy({ caseStudy }: SolutionCaseStudyProps)
               <div className="text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight">
                 {caseStudy.metric}
               </div>
-              <div className="text-xs sm:text-sm font-bold text-slate-450 uppercase tracking-wider leading-snug">
+              <div className="text-xs sm:text-sm font-bold text-slate-450 tracking-wider leading-snug">
                 {caseStudy.metricLabel}
               </div>
             </div>
@@ -60,12 +60,12 @@ export default function SolutionCaseStudy({ caseStudy }: SolutionCaseStudyProps)
             
             <div className="space-y-4 font-semibold text-xs sm:text-sm leading-relaxed text-slate-500">
               <div className="border-l-4 border-rose-500/80 pl-4 py-0.5">
-                <h5 className="text-[10px] uppercase font-bold text-rose-500 tracking-widest mb-1">The Challenge</h5>
+                <h5 className="text-[10px] font-bold text-rose-500 tracking-widest mb-1">The Challenge</h5>
                 <p className="text-slate-550">{caseStudy.challenge}</p>
               </div>
 
               <div className="border-l-4 border-primary pl-4 py-0.5">
-                <h5 className="text-[10px] uppercase font-bold text-primary tracking-widest mb-1">The Solution & Result</h5>
+                <h5 className="text-[10px] font-bold text-primary tracking-widest mb-1">The Solution & Result</h5>
                 <p className="text-slate-555">{caseStudy.result}</p>
               </div>
             </div>

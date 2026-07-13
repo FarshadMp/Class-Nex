@@ -28,7 +28,7 @@ export default function TrustBanner() {
             
             {/* Left Side: Tag, Title, Button */}
             <div className="lg:col-span-7 space-y-6">
-              <span className="text-xs font-black uppercase tracking-wider text-emerald-100 flex items-center gap-2">
+              <span className="text-xs font-black tracking-wider text-emerald-100 flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-white rounded-xs shrink-0" />
                 TRUSTED BY SCHOOLS
               </span>
@@ -40,7 +40,7 @@ export default function TrustBanner() {
               <div className="pt-4">
                 <Link
                   href="#contact"
-                  className="inline-flex items-center gap-3 px-6 py-3.5 bg-white hover:bg-slate-50 text-slate-900 rounded-full text-xs sm:text-sm font-black tracking-widest uppercase transition-all shadow-md group cursor-pointer"
+                  className="inline-flex items-center gap-3 px-6 py-3.5 bg-white hover:bg-slate-50 text-slate-900 rounded-full text-xs sm:text-sm font-black tracking-widest transition-all shadow-md group cursor-pointer"
                 >
                   <span>Learn More</span>
                   <span className="flex items-center justify-center w-5 h-5 bg-slate-900 text-white rounded-full transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">

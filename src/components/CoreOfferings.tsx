@@ -38,7 +38,7 @@ const AIAgentsMockup = () => (
     {/* Mobile mockup on left */}
     <div className="w-1/2 bg-white border border-slate-200/80 rounded-lg p-3.5 space-y-3.5 text-xs font-semibold text-slate-500 text-left shrink-0 shadow-sm">
       <div className="flex justify-between items-center pb-1 border-b border-slate-100">
-        <span className="text-[10px] font-black uppercase text-slate-600">Student Profile</span>
+        <span className="text-[10px] font-black text-slate-600">Student Profile</span>
         <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
       </div>
       <div className="bg-slate-50/80 p-2.5 rounded border border-slate-100">

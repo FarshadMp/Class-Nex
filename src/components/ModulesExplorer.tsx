@@ -108,7 +108,7 @@ export default function ModulesExplorer() {
                 <button
                   key={cat.id}
                   onClick={() => setActiveTab(cat.id)}
-                  className={`text-xs sm:text-sm font-bold tracking-widest uppercase transition-colors relative pb-4 focus:outline-none shrink-0 cursor-pointer ${
+                  className={`text-xs sm:text-sm font-bold tracking-widest transition-colors relative pb-4 focus:outline-none shrink-0 cursor-pointer ${
                     isActive ? "text-white" : "text-white/50 hover:text-white"
                   }`}
                 >

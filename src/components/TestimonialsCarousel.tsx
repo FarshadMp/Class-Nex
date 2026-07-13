@@ -55,7 +55,7 @@ export default function TestimonialsCarousel() {
               <h4 className="text-2xl font-bold text-slate-800 tracking-tight leading-[1] mb-2">
                 Trusted by leaders
               </h4>
-              <p className="text-xs font-bold text-slate-600 uppercase tracking-wider">
+              <p className="text-xs font-bold text-slate-600 tracking-wider">
                 Endorsed by educators
               </p>
             </div>

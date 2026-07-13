@@ -39,7 +39,7 @@ export default async function PlatformFeaturePage({ params }: PageProps) {
           <Calendar className="w-6 h-6" />
         </div>
         <div>
-          <div className="text-xs font-bold uppercase text-slate-600">KPI HIGHLIGHT</div>
+          <div className="text-xs font-bold text-slate-600">KPI HIGHLIGHT</div>
           <div className="text-lg font-bold text-slate-800">Operational Metric</div>
         </div>
       </div>

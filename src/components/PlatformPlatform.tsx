@@ -35,7 +35,7 @@ export default function PlatformPlatform() {
                   <span className="truncate">Draft Grade 5 attendance alert...</span>
                 </div>
                 
-                <div className="absolute right-4 bottom-12 bg-primary text-white text-[10px] font-black uppercase tracking-wider px-3 py-1.5 rounded-lg shadow-md shadow-primary/20 flex items-center gap-1 group-hover:scale-105 transition-transform duration-300">
+                <div className="absolute right-4 bottom-12 bg-primary text-white text-[10px] font-black tracking-wider px-3 py-1.5 rounded-lg shadow-md shadow-primary/20 flex items-center gap-1 group-hover:scale-105 transition-transform duration-300">
                   <span>Send</span>
                 </div>
 

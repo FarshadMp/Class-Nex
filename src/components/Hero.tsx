@@ -14,12 +14,12 @@ import {
 } from "lucide-react";
 
 const floatingIcons = [
-  { icon: GraduationCap, className: "top-[22%] left-[6%] text-primary", delay: 0, duration: 4 },
-  { icon: BookOpen, className: "top-[48%] left-[10%] text-emerald-500", delay: 1, duration: 5 },
-  { icon: Pencil, className: "top-[70%] left-[5%] text-slate-600 rotate-12", delay: 2, duration: 4.5 },
-  { icon: Award, className: "top-[25%] right-[6%] text-emerald-600", delay: 0.5, duration: 4.8 },
-  { icon: Calculator, className: "top-[45%] right-[10%] text-primary", delay: 1.5, duration: 5.2 },
-  { icon: Bell, className: "top-[68%] right-[5%] text-slate-600 -rotate-12", delay: 2.5, duration: 4.2 },
+  { icon: GraduationCap, className: "top-[22%] left-[6%] text-emerald-400", delay: 0, duration: 4 },
+  { icon: BookOpen, className: "top-[48%] left-[10%] text-teal-400", delay: 1, duration: 5 },
+  { icon: Pencil, className: "top-[70%] left-[5%] text-emerald-500/80 rotate-12", delay: 2, duration: 4.5 },
+  { icon: Award, className: "top-[25%] right-[6%] text-emerald-300", delay: 0.5, duration: 4.8 },
+  { icon: Calculator, className: "top-[45%] right-[10%] text-teal-300", delay: 1.5, duration: 5.2 },
+  { icon: Bell, className: "top-[68%] right-[5%] text-emerald-400/80 -rotate-12", delay: 2.5, duration: 4.2 },
 ];
 
 const stats = [
@@ -31,12 +31,34 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="relative pt-34 md:pt-44 pb-0 flex flex-col items-center overflow-hidden bg-white font-sans text-center">
+    <section className="relative pt-34 md:pt-44 pb-0 flex flex-col items-center overflow-hidden bg-[#030d0a] font-sans text-center">
       {/* Background Decorative Mesh & Glows */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-0 left-0 right-0 h-[300px] bg-grid-pattern opacity-80" />
-        <div className="absolute top-0 left-0 right-0 h-[300px] bg-gradient-to-b from-transparent to-white" />
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-primary/5 rounded-full blur-3xl" />
+        {/* Dark Grid Pattern Overlay */}
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-grid-pattern-dark opacity-60" />
+        
+        {/* Top Dark Fade */}
+        <div className="absolute top-0 left-0 right-0 h-[120px] bg-gradient-to-b from-[#030d0a] to-transparent" />
+
+        {/* Dynamic SaaS Glowing Radial Gradients */}
+        <div 
+          className="absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] sm:w-[850px] h-[400px] sm:h-[500px] rounded-full blur-[100px] sm:blur-[130px] opacity-75"
+          style={{
+            background: "radial-gradient(circle, rgba(5, 150, 105, 0.28) 0%, rgba(16, 185, 129, 0.12) 40%, transparent 70%)"
+          }}
+        />
+        <div 
+          className="absolute top-[25%] left-[25%] w-[350px] h-[350px] rounded-full blur-[90px] opacity-40"
+          style={{
+            background: "radial-gradient(circle, rgba(20, 184, 166, 0.25) 0%, transparent 70%)"
+          }}
+        />
+        <div 
+          className="absolute top-[30%] right-[25%] w-[350px] h-[350px] rounded-full blur-[90px] opacity-40"
+          style={{
+            background: "radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 70%)"
+          }}
+        />
       </div>
 
       {/* Floating Animated School-Related Icons */}
@@ -45,7 +67,7 @@ export default function Hero() {
         return (
           <motion.div
             key={index}
-            className={`absolute z-10 hidden lg:flex items-center justify-center p-3.5 bg-white/70 backdrop-blur-md border border-slate-200/50 rounded-2xl shadow-md ${item.className}`}
+            className={`absolute z-10 hidden lg:flex items-center justify-center p-3.5 bg-slate-950/45 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg shadow-black/20 ${item.className}`}
             animate={{
               y: [0, -12, 0],
             }}
@@ -67,7 +89,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-slate-50 border border-slate-200/80 text-xs sm:text-sm font-bold text-slate-700 mb-4"
+          className="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-emerald-950/45 backdrop-blur-md border border-emerald-800/40 text-xs sm:text-sm font-bold text-emerald-300 mb-4 shadow-sm shadow-emerald-900/10"
         >
           🚀 Next-Generation School Management System
         </motion.div>
@@ -77,10 +99,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
-          className="text-4xl sm:text-5xl lg:text-7xl font-semibold text-slate-900 leading-[1.05] max-w-4xl mb-6 tracking-tight"
+          className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-[1.05] max-w-4xl mb-6 tracking-tight"
         >
           Run Your School on{" "}
-          <span className="bg-gradient-to-r from-primary via-emerald-500 to-emerald-700 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-green-400 bg-clip-text text-transparent drop-shadow-[0_2px_15px_rgba(52,211,153,0.2)]">
             Intelligence
           </span>
         </motion.h1>
@@ -90,7 +112,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="text-sm md:text-lg text-slate-500 font-medium leading-[1.4] max-w-3xl mb-8 font-inter"
+          className="text-sm md:text-lg text-emerald-100/75 font-medium leading-[1.45] max-w-3xl mb-8 font-inter"
         >
           Class Nex is an AI-powered, all-in-one School Management System that unifies academics, administration, finance, and communication — so your team can focus less on paperwork and more on education.
         </motion.p>
@@ -100,11 +122,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 items-center justify-center mb-16"
+          className="flex flex-col sm:flex-row gap-4 items-center justify-center mb-16 z-20"
         >
           <Link
             href="#contact"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-primary hover:bg-primary-hover text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all uppercase cursor-pointer group"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-primary hover:bg-primary-hover text-sm font-bold text-white shadow-lg shadow-primary/30 transition-all cursor-pointer group hover:scale-[1.02]"
           >
             <span>Book a demo</span>
             <span className="flex items-center justify-center w-6 h-6 bg-white text-primary rounded-full transition-transform group-hover:translate-x-0.5">
@@ -114,10 +136,10 @@ export default function Hero() {
 
           <Link
             href="#platform"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white border border-slate-200 hover:bg-slate-50 text-sm font-bold text-slate-700 transition-all uppercase cursor-pointer group"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/10 border border-white/15 hover:bg-white/15 text-sm font-bold text-white backdrop-blur-sm transition-all cursor-pointer group hover:scale-[1.02]"
           >
             <span>Explore the Platform</span>
-            <span className="flex items-center justify-center w-6 h-6 bg-slate-100 text-slate-500 rounded-full transition-transform group-hover:translate-x-0.5">
+            <span className="flex items-center justify-center w-6 h-6 bg-white/10 text-white rounded-full transition-transform group-hover:translate-x-0.5">
               <ArrowUpRight className="w-3.5 h-3.5" />
             </span>
           </Link>
@@ -128,22 +150,22 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.75 }}
-          className="w-full max-w-5xl bg-gradient-to-b from-white to-slate-50/65 border border-slate-200/80 border-b-8 border-b-slate-350/55 rounded-[26px] md:rounded-[32px] p-6 sm:p-8 shadow-[0_15px_30px_-5px_rgba(0,0,0,0.05),_0_10px_15px_-5px_rgba(5,150,105,0.02)] hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1),_0_15px_30px_-10px_rgba(5,150,105,0.08)] hover:-translate-y-2 transition-all duration-300 mb-16 relative overflow-hidden text-left"
+          className="w-full max-w-5xl bg-gradient-to-b from-white/[0.07] to-white/[0.01] backdrop-blur-xl border border-white/[0.12] rounded-[26px] md:rounded-[32px] p-6 sm:p-8 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] backdrop-saturate-[1.2] hover:shadow-[0_30px_60px_rgba(5,150,105,0.08)] hover:-translate-y-2 transition-all duration-300 mb-16 relative overflow-hidden text-left"
         >
           {/* Background decorative glow inside card */}
-          <div className="absolute -right-24 -bottom-24 w-48 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute -left-24 -top-24 w-48 h-48 bg-emerald-400/5 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -right-24 -bottom-24 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -left-24 -top-24 w-48 h-48 bg-emerald-400/10 rounded-full blur-3xl pointer-events-none" />
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-2 gap-x-4 md:gap-0 divide-y-0 md:divide-x divide-slate-150/80 relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-2 gap-x-4 md:gap-0 divide-y-0 md:divide-x divide-white/[0.08] relative z-10">
             {stats.map((stat, i) => (
               <div 
                 key={i} 
                 className="flex flex-col items-center justify-center text-center px-4 py-4 sm:py-2 md:py-1"
               >
-                <span className="text-4xl lg:text-5xl font-black bg-gradient-to-r from-primary to-emerald-600 bg-clip-text text-transparent mb-2 tracking-tight drop-shadow-[0_3px_5px_rgba(5,150,105,0.15)]">
+                <span className="text-4xl lg:text-5xl font-black bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent mb-2 tracking-tight drop-shadow-[0_3px_10px_rgba(52,211,153,0.25)]">
                   {stat.value}
                 </span>
-                <span className="text-xs sm:text-sm font-semibold text-slate-500 leading-snug max-w-[180px]">
+                <span className="text-xs sm:text-sm font-semibold text-slate-300 leading-snug max-w-[180px]">
                   {stat.label}
                 </span>
               </div>

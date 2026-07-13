@@ -16,8 +16,8 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#fbfbf9] text-slate-900 selection:bg-primary/10 selection:text-primary">
-      <Navbar />
+    <div className="min-h-screen bg-[#fbfbf9] text-slate-900 selection:bg-primary/10 selection:text-primary font-sans">
+      <Navbar transparentAtTop={true} />
       <Hero />
       <Overview /> 
       <PlatformPlatform />

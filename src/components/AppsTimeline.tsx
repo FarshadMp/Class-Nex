@@ -77,7 +77,7 @@ export default function AppsTimeline() {
                     </div>
                   </div>
                   <div className="shrink-0 text-left md:text-right">
-                    <span className="inline-block md:block text-xs font-bold text-primary bg-emerald-50 border border-emerald-100/80 px-3 py-1 rounded-full uppercase tracking-wider">
+                    <span className="inline-block md:block text-xs font-bold text-primary bg-emerald-50 border border-emerald-100/80 px-3 py-1 rounded-full tracking-wider">
                       {step.timeframe}
                     </span>
                   </div>
