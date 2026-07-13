@@ -124,7 +124,7 @@ export default function Hero() {
 
           <Link
             href="#platform"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white border border-slate-200 hover:bg-slate-50 text-base font-bold text-slate-700 shadow-sm transition-all uppercase cursor-pointer group"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white border border-slate-200 hover:bg-slate-50 text-base font-bold text-slate-700 transition-all uppercase cursor-pointer group"
           >
             <span>Explore the Platform</span>
             <span className="flex items-center justify-center w-6 h-6 bg-slate-100 text-slate-500 rounded-full transition-transform group-hover:translate-x-0.5">
