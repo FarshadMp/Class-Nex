@@ -11,7 +11,6 @@ export default function ContactPage() {
       
       {/* Contact Grid Section */}
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden font-sans">
-        <div className="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none" />
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
         
         <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl relative z-10">
