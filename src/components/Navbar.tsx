@@ -50,7 +50,7 @@ export default function Navbar() {
               onMouseEnter={() => setActiveDropdown("platform")}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className="flex items-center gap-1 text-base font-bold text-slate-700 hover:text-primary transition-colors cursor-pointer py-2">
+              <button className="flex items-center gap-1 text-lg font-bold text-slate-700 hover:text-primary transition-colors cursor-pointer py-2">
                 <span>Platform</span>
                 <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === "platform" ? "rotate-180" : ""}`} />
               </button>
@@ -78,7 +78,7 @@ export default function Navbar() {
               onMouseEnter={() => setActiveDropdown("solutions")}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className="flex items-center gap-1 text-base font-bold text-slate-700 hover:text-primary transition-colors cursor-pointer py-2">
+              <button className="flex items-center gap-1 text-lg font-bold text-slate-700 hover:text-primary transition-colors cursor-pointer py-2">
                 <span>Solutions</span>
                 <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === "solutions" ? "rotate-180" : ""}`} />
               </button>
@@ -100,13 +100,13 @@ export default function Navbar() {
               </AnimatePresence>
             </div>
 
-            <Link href="/apps" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
+            <Link href="/apps" className="text-lg font-bold text-slate-700 hover:text-primary transition-colors">
               Apps
             </Link>
-            <Link href="/about" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
+            <Link href="/about" className="text-lg font-bold text-slate-700 hover:text-primary transition-colors">
               About Us
             </Link>
-            <Link href="/contact" className="text-base font-bold text-slate-700 hover:text-primary transition-colors">
+            <Link href="/contact" className="text-lg font-bold text-slate-700 hover:text-primary transition-colors">
               Contact
             </Link>
           </nav>

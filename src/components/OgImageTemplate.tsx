@@ -140,7 +140,7 @@ export function generateOgImage({ title, subtitle, category }: OgImageProps) {
               style={{
                 fontSize: title.length > 55 ? "50px" : "60px",
                 fontWeight: 800,
-                backgroundImage: "linear-gradient(90deg, #16a34a, #059669, #047857)",
+                backgroundImage: "linear-gradient(90deg, #15803d, #065f46, #064e3b)",
                 backgroundClip: "text",
                 color: "transparent",
                 margin: 0,

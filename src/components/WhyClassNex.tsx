@@ -45,8 +45,8 @@ export default function WhyClassNex() {
                 <BadgeDollarSign className="w-5 h-5 md:w-6 md:h-6" />
               </div>
               <div>
-                <h4 className="text-base sm:text-lg font-bold text-slate-800 mb-1">Cost-Effective Solution</h4>
-                <p className="text-xs sm:text-sm text-slate-500 font-bold uppercase tracking-wide">
+                <h4 className="text-lg sm:text-xl font-bold text-slate-800">Cost-Effective Solution</h4>
+                <p className="text-xs sm:text-sm text-slate-500 font-semibold">
                   Enterprise-grade capability, priced for schools of every size.
                 </p>
               </div>
@@ -62,7 +62,7 @@ export default function WhyClassNex() {
               {steps.map((step, i) => {
                 const Icon = step.icon;
                 return (
-                  <div key={i} className="flex gap-3 sm:gap-4 relative z-10 bg-slate-50 p-3 sm:p-4 rounded-2xl border border-slate-100 hover:border-primary/10 hover:bg-white transition-all duration-300 group">
+                  <div key={i} className="flex gap-3 sm:gap-4 relative z-10 bg-slate-100 p-3 sm:p-4 rounded-2xl border border-slate-100 hover:border-primary/10 hover:bg-white transition-all duration-300 group">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white border border-slate-200 text-slate-600 flex items-center justify-center shrink-0 shadow-sm group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300">
                       <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>

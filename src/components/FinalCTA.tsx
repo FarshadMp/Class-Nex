@@ -9,7 +9,7 @@ export default function FinalCTA() {
     <section className="w-full py-16 bg-white font-sans text-center relative overflow-hidden">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         {/* Banner Card */}
-        <div className="relative w-full rounded-3xl bg-gradient-to-br from-[#16a34a] via-[#059669] to-[#047857] py-16 px-6 md:px-12 text-center text-white overflow-hidden shadow-xl">
+        <div className="relative w-full rounded-3xl bg-gradient-to-br from-[#15803d] via-[#065f46] to-[#064e3b] py-16 px-6 md:px-12 text-center text-white overflow-hidden shadow-xl">
           {/* Decorative background grid pattern inside card */}
           <div 
             className="absolute inset-0 z-0 opacity-15 mix-blend-overlay pointer-events-none"

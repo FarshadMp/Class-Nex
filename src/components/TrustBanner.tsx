@@ -9,7 +9,7 @@ export default function TrustBanner() {
     <section className="w-full pt-16 md:pt-22 bg-white font-sans text-left">
       <div className="mx-auto px-4 sm:px-6 lg:px-0 max-w-7xl">
         {/* Banner Card Container */}
-        <div className="relative w-full rounded-[32px] bg-gradient-to-br from-[#16a34a] via-[#059669] to-[#047857] p-8 md:p-12 lg:p-14 text-white overflow-hidden shadow-xl">
+        <div className="relative w-full rounded-[32px] bg-gradient-to-br from-[#15803d] via-[#065f46] to-[#064e3b] p-8 md:p-12 lg:p-14 text-white overflow-hidden shadow-xl">
           {/* Blueprint Grid Pattern */}
           <div 
             className="absolute inset-0 z-0 opacity-15 mix-blend-overlay pointer-events-none"
