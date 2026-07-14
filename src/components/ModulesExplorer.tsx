@@ -108,7 +108,7 @@ export default function ModulesExplorer() {
                 <button
                   key={cat.id}
                   onClick={() => setActiveTab(cat.id)}
-                  className={`text-xs sm:text-sm font-bold tracking-widest transition-colors relative pb-4 focus:outline-none shrink-0 cursor-pointer ${
+                  className={`text-xs sm:text-sm font-bold transition-colors relative pb-4 focus:outline-none shrink-0 cursor-pointer ${
                     isActive ? "text-white" : "text-white/50 hover:text-white"
                   }`}
                 >
@@ -175,7 +175,7 @@ export default function ModulesExplorer() {
                     <Check className="w-4.5 h-4.5" />
                   </div>
                   <div>
-                    <h4 className="text-lg sm:text-xl font-bold text-slate-800 mb-1">{mod.name}</h4>
+                    <h4 className="text-lg sm:text-lg font-bold text-slate-800 mb-1">{mod.name}</h4>
                     <p className="text-base sm:text-sm text-slate-600 font-semibold leading-[1.4]">
                       {mod.details.join(" • ")}
                     </p>

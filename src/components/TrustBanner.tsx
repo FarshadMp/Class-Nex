@@ -40,7 +40,7 @@ export default function TrustBanner() {
               <div className="pt-4">
                 <Link
                   href="#contact"
-                  className="inline-flex items-center gap-3 px-6 py-3.5 bg-white hover:bg-slate-50 text-slate-900 rounded-full text-xs sm:text-sm font-black tracking-widest transition-all shadow-md group cursor-pointer"
+                  className="inline-flex items-center gap-3 px-6 py-3.5 bg-white hover:bg-slate-50 text-slate-900 rounded-full text-xs sm:text-sm font-black transition-all shadow-md group cursor-pointer"
                 >
                   <span>Learn More</span>
                   <span className="flex items-center justify-center w-5 h-5 bg-slate-900 text-white rounded-full transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
